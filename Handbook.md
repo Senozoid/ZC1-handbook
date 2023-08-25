@@ -28,6 +28,8 @@ the middle
 - The Def attribute always reduces damage taken, but never completely eliminates it. The higher the incoming damage, the more damage will be subtracted, but the percentage of the damage reduced will become smaller.
 - The amount of damage subtracted can never exceed the value of Def.
 
+> If you are on GitHub and can not see the following image, use a VPN or connect through a different ISP.
+
 ![Damage taken with respect to incoming damage, at constant Def values.](Handbook_files/wrtinc-def-10-50-200.png)
 The above graph shows how received damage may change with respect to incoming damage at different fixed values of the Def attribute. More damage is blocked as the incoming damage increases, but the percentage of the incoming damage being blocked becomes smaller. \
 For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtraction=4, percentage reduction=80%), and a damage of 30 may be reduced to 18 (subtraction=12, percentage reduction=40%). So as the incoming damage increases (5 to 30), the amount of the subtracted damage increases (4 to 12), but its value in relation to the total incoming damage, decreases (80% to 40%). [[also see Appendix-1]](#appendix-1) \
