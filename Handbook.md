@@ -15,6 +15,8 @@ the middle
 - Nothing in the inventory except Specials (potions and glyphs are examples of specials) can be accessed during combat, and no extra turn is lost by their usage, unless specified otherwise in the item description.
 
 ## Physical Damage
+Physical damage is a vector of three dimensions. The three coefficients of physical damage are blunt damage, cutting damage and piercing damage. All calculations are done separately and symmetrically regarding these coefficients. Both the Def and Dmg attributes, as well as weapon Power and armour Rating are all 3D vectors. \
+ \
 **Things to note about dealing physical damage :**
 - Outgoing physical damage is determined by the attacker’s equipped weapon(s), Strength attribute, Dmg modifiers, Martial skill and the defender’s Martial skill.
 - The maximum damage potential of a weapon is its Power, and the further the Weight of a weapon exceeds the Strength of the wielder, the less effective it will become in proportion to its Power.
@@ -28,13 +30,27 @@ the middle
 - The Def attribute always reduces damage taken, but never completely eliminates it. The higher the incoming damage, the more damage will be subtracted, but the percentage of the damage reduced will become smaller.
 - The amount of damage subtracted can never exceed the value of Def.
 
-> If you are on GitHub and can not see the following image, use a VPN or connect through a different ISP.
+> If you are on GitHub and cannot see the following image, use a VPN or connect through a different ISP.
 
-![Damage taken with respect to incoming damage, at constant Def values.](Handbook_files/wrtinc-def-10-50-200.png)
+![Graph: Damage taken with respect to incoming damage, at constant Def values.](Handbook_files/wrtinc-def-10-50-200.png)
 The above graph shows how received damage may change with respect to incoming damage at different fixed values of the Def attribute. More damage is blocked as the incoming damage increases, but the percentage of the incoming damage being blocked becomes smaller. \
-For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtraction=4, percentage reduction=80%), and a damage of 30 may be reduced to 18 (subtraction=12, percentage reduction=40%). So as the incoming damage increases (5 to 30), the amount of the subtracted damage increases (4 to 12), but its value in relation to the total incoming damage, decreases (80% to 40%). [[also see Appendix-1]](#appendix-1) \
-...
+For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtraction=4, percentage reduction=80%), and a damage of 30 may be reduced to 18 (subtraction=12, percentage reduction=40%). So as the incoming damage increases (5 to 30), the amount of the subtracted damage increases (4 to 12), but its value in relation to the total incoming damage, decreases (80% to 40%). [[also see Appendix-1]](#appendix-1)
 
+### Calculation of outgoing physical damage:
+```
+WeaponDam = min(Power, Power*Strength/Weight)
+BaseDmg = Sum of WeaponDams
+E = max(0, (2*Martial-OppMartial)/Martial)
+Outgoing = Mod(E*BaseDmg)
+[In the Stats screen, E = 1]
+```
+### Calculation of physical damage received:
+```
+BaseDef = head*20% + torso*50% + arms*10% + legs*10% + hands*5% + feet*5% + shield*(10*Martial)%
+= (head*4 + torso*10 + arms*2 + legs*2 + hands + feet + shield*2*Martial)/20
+EffDamage = Inc*Inc/(Inc+Mod(BaseDef))
+[Where Inc = Incoming damage]
+```
 # Gameplay
 # Story
 # World
