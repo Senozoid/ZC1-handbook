@@ -1,8 +1,4 @@
-﻿
-the beginning
-the middle
-.
-# Introduction
+﻿# Introduction
 # Character
 # Combat
 ## Overview
@@ -30,7 +26,7 @@ Physical damage is a vector of three dimensions. The three coefficients of physi
 - The Def attribute always reduces damage taken, but never completely eliminates it. The higher the incoming damage, the more damage will be subtracted, but the percentage of the damage reduced will become smaller.
 - The amount of damage subtracted can never exceed the value of Def.
 
-> If you are on GitHub and cannot see the following image, use a VPN or connect through a different ISP.
+> If you are on GitHub and cannot see the following image, please use a VPN or connect through a different ISP.
 
 ![Graph: Damage taken with respect to incoming damage, at constant Def values.](Handbook_files/wrtinc-def-10-50-200.png)
 The above graph shows how received damage may change with respect to incoming damage at different fixed values of the Def attribute. More damage is blocked as the incoming damage increases, but the percentage of the incoming damage being blocked becomes smaller. \
@@ -57,6 +53,5 @@ EffDamage = Inc*Inc/(Inc+Mod(BaseDef))
 # Technical Details
 # Appendices
 ## Appendix-1
-.
-the end
+
 
