@@ -130,3 +130,5 @@ I did not want to implement AC the way it works in D&D, because it feels to me l
 
 Here is a random graph that was lying around in my screenshots and was too nice looking to waste. It shows how effective damage decreases with increasing defence, when the incoming damage is constant. Also, it very accurately represents my life since I became an adult:
 ![Graph: Received damage wrt Def, at constant incoming.](Handbook_files/wrtdef-inc-20-40-70.png)
+
+> If you are on GitHub and cannot see the above image, please use a VPN or connect through a different ISP.
