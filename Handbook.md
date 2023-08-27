@@ -16,19 +16,21 @@ The most common race in the continent has also been holding the most political p
 
 *"Dwarves have mined these lands for fifteen millennia. If you dig now and find gold, it’s not mining, it’s archeology." ~ an Ozar merchant*
 
-Delvers of the deep and artificers of the most legendary creations in history, the dwarves have dwelt in Zeneria for over ten thousand years before the first humans were known to exist. The tales of lost dwarven cities full of boundless treasure have spelled doom for many adventurers through the ages. Dwarves can naturally live significantly longer lives than humans, but their love of battle glory make that difficult. They also love stories and ale, both of which are found aplenty in taverns, where happy dwarves are a common sight. Dwarves are of short stature and light skin, and their hair varies from fiery red to dark brown. Their natural lifespan is of about hundred and twenty to hundred and eighty years, but their life expectancy is usually not over hundred and ten.
+Delvers of the deep and artificers of the most legendary creations in history, the dwarves have dwelt in Zeneria for over ten thousand years before the first humans were known to exist. The tales of lost dwarven cities full of boundless treasure have spelled doom for many adventurers through the ages. Dwarves can naturally live significantly longer lives than humans, but their love of battle glory make that difficult. They also love stories and ale, both of which are found aplenty in taverns, where happy dwarves are a common sight. Dwarves are of short stature and light skin, and their hair varies from fiery red to dark brown. Their natural lifespan is of about hundred and thirty to hundred and seventy years, but their life expectancy is usually not over hundred and ten.
 
 ### Elf
 
 *"Elves live long enough to master several disciplines our lives are just too short for. Humility isn't one of them." ~ a veteran human*
 
-Twelve centuries before humans named it the Zenerian Empire, an elf king united the powers of the continent into one.  
+Twelve centuries before humans named it the Zenerian Empire, an elf king united the powers of the continent into one. \
+Continental elves are willowy and fair. The colour of their hair ranges from light auburn to golden, although some prefer to dye their hair with darker shades. Elves have lives that can span ten times the length of human ones, and they do much to maintain it so.
 
 ### Half-giant
 
 *"Half-giants have been allies to dwarves since dawn of time, even though, one might say we don't quite see eye to eye, heh." ~ a drunk dwarf*
 
-People of this race are not a common sight, but their presence is hard to miss.
+People of this race are not a common sight, but their presence is hard to miss. \
+Half-giants are towering hulks of inhuman strength, but despite their obvious physical advantages, they do not naturally live longer than sixty years. They are pale of skin and their hair varies from the colour of ash to the colour of snow.
 
 # Combat
 
@@ -51,13 +53,13 @@ Physical damage is a vector of three dimensions. The three coefficients of physi
 #### Things to note:
 
 - Outgoing physical damage is determined by the attacker’s equipped weapon(s), Strength attribute, Dmg modifiers, Martial skill and the defender’s Martial skill.
-- The maximum damage potential of a weapon is its Power, and the further the Weight of a weapon exceeds the Strength of the wielder, the less effective it will become in proportion to its Power.
+- The maximum damage potential of a weapon is its Power, and the further the total Weight of equipped weapon(s) exceeds the Strength of the wielder, the less effective each weapon will become in proportion to its Power.
 - If the Martial skill of a combatant is lower than that of the opponent's, the former's outgoing damage will be reduced, and the latter's increased. If the defender's Martial skill is double or more of that of the attacker's, the former will completely evade every attack from the latter.
 
 #### Calculations:
 
 ```
-WeaponDam = min(Power, Power*Strength/Weight)
+WeaponDam = min(Power, Power*Strength/TotalWeight)
 BaseDmg = Sum of valid WeaponDams
 E = max(0, (2*Martial-OppMartial)/Martial)
 Outgoing = Mod(E*BaseDmg)
@@ -103,13 +105,9 @@ Opposition modifiers are effectiveness buffs and debuffs against certain enemies
 Chaos is a somewhat random additive modifier. Chaos level is determined at the beginning of combat. There are 5 levels of Chaos: Low, Mild, Moderate, High, Extreme. These are the respective ranges of Chaos at each level:
 
 * Low = -2 to +2
-
 * Mild = -6 to +6
-
 * Moderate = -12 to +12
-
 * High = -20 to +20
-
 * Extreme = -32 to +32
 
 In Azerog (Warmouth), Chaos level is never below Moderate. But in most other places, it is rarely above Moderate. Each gem of Nurileth elevates the combat by one Chaos level. The Chaos modifier is rolled during each turn based on the Chaos level and added to the attacking Dmg of that turn. Chaos also affects transactions but with a different mechanism.
@@ -132,3 +130,7 @@ Here is a random graph that was lying around in my screenshots and was too nice 
 ![Graph: Received damage wrt Def, at constant incoming.](Handbook_files/wrtdef-inc-20-40-70.png)
 
 > If you are on GitHub and cannot see the above image, please use a VPN or connect through a different ISP.
+
+# Glossary
+
+placeholder-text
