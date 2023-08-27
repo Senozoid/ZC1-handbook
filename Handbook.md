@@ -4,7 +4,7 @@
 
 ## Playable Races
 
-The most basic identity of the player character is their race. There are plans for 4 playable races: human, dwarf, elf, half-giant. However, in the current version, human is the only playable race since the re-writing of the story required for other races has not been completed.
+One of the basic components of the player character's identity is their race. There are plans for 4 playable races: human, dwarf, elf, half-giant. However, in the early versions of the game, not all of them may be available to play.
 
 ### Human
 

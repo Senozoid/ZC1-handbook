@@ -1,1 +1,0 @@
-# [Click here to read the Handbook!](Handbook.md)
