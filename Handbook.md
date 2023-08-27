@@ -8,26 +8,26 @@ One of the basic components of the player character's identity is their race. Th
 
 ### Human
 
-*"Disease, weed and human… let a little bit sprout up and sooner than you expect, the world’s full of it." ~ a proud elf*
+_"Disease, weed and human… let a little bit sprout up and sooner than you expect, the world’s full of it." ~ a proud elf_
 
 The most common race in the continent has also been holding the most political power for over three hundred years. Humans are smart, diplomatic and excellent strategists. This race is not as ancient as dwarves or elves, nor do humans live as long. But they bear child more often, and are much eager to expand their reach. Their smiths are not as skilled as those of the dwarves, but their innovation is unparalleled. Their mages are not as powerful as those of the elves, but their thirst for knowledge knows no bounds. Humans of Zeneria are predominantly brown skinned, dark haired, tall and healthy. Their lives span anywhere between seventy to ninety years, unless taken early.
 
 ### Dwarf
 
-*"Dwarves have mined these lands for fifteen millennia. If you dig now and find gold, it’s not mining, it’s archeology." ~ an Ozar merchant*
+_"Dwarves have mined these lands for fifteen millennia. If you dig now and find gold, it’s not mining, it’s archeology." ~ an Ozar merchant_
 
 Delvers of the deep and artificers of the most legendary creations in history, the dwarves have dwelt in Zeneria for over ten thousand years before the first humans were known to exist. The tales of lost dwarven cities full of boundless treasure have spelled doom for many adventurers through the ages. Dwarves can naturally live significantly longer lives than humans, but their love of battle glory make that difficult. They also love stories and ale, both of which are found aplenty in taverns, where happy dwarves are a common sight. Dwarves are of short stature and light skin, and their hair varies from fiery red to dark brown. Their natural lifespan is of about hundred and thirty to hundred and seventy years, but their life expectancy is usually not over hundred and ten.
 
 ### Elf
 
-*"Elves live long enough to master several disciplines our lives are just too short for. Humility isn't one of them." ~ a veteran human*
+_"Elves live long enough to master several disciplines our lives are just too short for. Humility isn't one of them." ~ a veteran human_
 
 Twelve centuries before humans named it the Zenerian Empire, an elf king united the powers of the continent into one. \
 Continental elves are willowy and fair. The colour of their hair ranges from light auburn to golden, although some prefer to dye their hair with darker shades. Elves have lives that can span ten times the length of human ones, and they do much to maintain it so.
 
 ### Half-giant
 
-*"Half-giants have been allies to dwarves since dawn of time, even though, one might say we don't quite see eye to eye, heh." ~ a drunk dwarf*
+_"Half-giants have been allies to dwarves since dawn of time, even though, one might say we don't quite see eye to eye, heh." ~ a drunk dwarf_
 
 People of this race are not a common sight, but their presence is hard to miss. \
 Half-giants are towering hulks of inhuman strength, but despite their obvious physical advantages, they do not naturally live longer than sixty years. They are pale of skin and their hair varies from the colour of ash to the colour of snow.
@@ -71,9 +71,9 @@ Outgoing = Mod(E*BaseDmg)
 #### Things to note:
 
 - The attacker’s outgoing damage is the defender’s incoming damage. The damage taken is determined by the incoming damage, the defender’s equipped armour piece(s) (including shield) and Def modifiers.
-- The further the total Weight of protective equipment exceeds Strength, the slower the wearer becomes.
+- The further the total Weight of equipped apparel exceeds the wearer's Strength, the slower the wearer becomes.
 - The defence potential of each piece of armour is its Rating. Each piece of physical armour contributes a fixed percentage to the wearer's Def attributes, for instance a cuirass has more effect on Def even if a pair of gauntlets have the same Rating, because torso armour protects 50% of the body, and hand armour protects only 5%.
-- The percentage contribution of a shield to the Def attribute is ten times the wielder's Martial skill. However, not only does equipping a shield prohibit the usage of both hands for weapon, but the shield Weight counts towards total armour Weight.
+- The percentage contribution of a shield to the Def attribute is ten times the wielder's Martial skill. However, not only does equipping a shield prohibit the usage of both hands for weapon, but the shield Weight counts towards total apparel Weight.
 - The Def attribute always reduces damage taken, but never completely eliminates it. The higher the incoming damage, the more damage will be subtracted, but the percentage of the damage reduced will become smaller.
 - The amount of damage subtracted can never exceed the value of Def.
 
@@ -89,6 +89,7 @@ EffDamage = Inc*Inc/(Inc+Mod(BaseDef))
 > If you are on GitHub and cannot see the following image, please use a VPN or connect through a different ISP.
 
 ![Graph: Damage taken wrt incoming damage, at constant Def values.](Handbook_files/wrtinc-def-10-50-200.png)
+ \
 The above graph shows how received damage may change with respect to incoming damage at different fixed values of the Def attribute. More damage is blocked as the incoming damage increases, but the percentage of the incoming damage being blocked becomes smaller. \
 For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtraction=4, percentage reduction=80%), and a damage of 30 may be reduced to 18 (subtraction=12, percentage reduction=40%). So as the incoming damage increases (5 to 30), the amount of the subtracted damage increases (4 to 12), but its value in relation to the total incoming damage, decreases (80% to 40%). [[also see Appendix-1]](#appendix-1-a-rant-about-ac)
 
@@ -126,7 +127,7 @@ In Azerog (Warmouth), Chaos level is never below Moderate. But in most other pla
 
 I did not want to implement AC the way it works in D&D, because it feels to me less like armour and more like dodging skill. Since no one wants to engage in even more manual number crunching in the middle of an intense battle than what we already do, that is good enough for a TTRPG. But in a game where all the calculations are handled by the computer, we can do better. The two simplest and perhaps the most common ways to calculate defence in games are what I call "cutoff" and "damping". In the former, a flat amount is removed from the incoming damage, and in the latter a fixed fraction of the incoming damage is absorbed. One subtracts, the other divides. But in my opinion, neither of these reflect reality adequately. The problem with "damping" is that in reality, something that can absorb half of a light damage usually can absorb only less than half of heavier damages, and something that can absorb half of a heavy damage, usually takes off more than half of lighter damages. On the other hand, "cutoff" armors have been given the potential to entirely nullify smaller attacks, whereas in reality we can feel softer knocks and bumps even through something that can protect us from stronger hits. One way we could avoid these two problems is by using a hybrid process to calculate defence. It could be a "damping" defence up until a threshold value, after which it becomes a "cutoff" defence. But this solution did not feel as elegant as the one I eventually came up with. And I was so proud of the one I came up with, that I finally ended up using it in my game just to serve my vanity. Not only does the defence I designed absorb higher percentages of lighter damages like the "cutoff" systems yet negate higher flat values from heavier damages like the "damping" systems, but it also does so through a single, very simple formula which happens to make the curve smooth and pretty unlike the jagged curve of the previously mentioned hybrid solution which also needed two separate formulas for damage values below and above the threshold. I am not aware of any games already using my system, and I will be very sad if I find out one that does, because I came up with this system all by myself and am very fond of it.
 
-Here is a random graph that was lying around in my screenshots and was too nice looking to waste. It shows how effective damage decreases with increasing defence, when the incoming damage is constant. Also, it very accurately represents my life since I became an adult:
+Here is a random graph that was lying around in my screenshots and was too nice looking to waste. It shows how effective damage decreases with increasing defence, when the incoming damage is constant. Also, it very accurately represents my life since I became an adult: \
 ![Graph: Received damage wrt Def, at constant incoming.](Handbook_files/wrtdef-inc-20-40-70.png)
 
 > If you are on GitHub and cannot see the above image, please use a VPN or connect through a different ISP.
