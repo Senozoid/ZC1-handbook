@@ -101,7 +101,7 @@ Racial, Class, Enchantment, Effect, Opposition, Chaos \
 [Within each type, additive modifiers are applied on top of multiplicative ones]
 
 Enchantments come from equipped items. \
-Effects come from blessings, curses, spells, potions and carried items. \
+Effects come from enemy attacks, spells, blessings, curses, potions, penalties (hunger, fatigue and bounty), toxins, diseases, bleeding, burning, suffocation and carried items. \
 Opposition modifiers are effectiveness buffs and debuffs against certain enemies or equipments. \
 Chaos is a somewhat random additive modifier. Chaos level is determined at the beginning of combat. There are 5 levels of Chaos: Low, Mild, Moderate, High, Extreme. These are the respective ranges of Chaos at each level:
 
