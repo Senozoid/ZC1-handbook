@@ -38,7 +38,9 @@ Half-giants are towering hulks of inhuman strength, but despite their obvious ph
 
 - Combat is turn-based and symmetric. The number of turns each participant gets in a round is equal to the participant's Athletic skill, which also determines the turn order, except if the battle starts with an ambush (then the attacked team misses the first round).
 - During their turns, participants have the option to Move or use a Spell instead of attacking with their weapons.
-- Moving is one-dimensional, and the maximum distance moved per turn is also equal to the participant’s Athletic skill, unless teleportation is involved. Participants with any form of teleportation can move out of turn, and without limits. If the player's distance from the nearest enemy exceeds 100 (some combats may not allow this), combat ends.
+- Moving is one-dimensional, and the maximum distance moved per turn is also equal to the participant’s Athletic skill, unless teleportation is involved.
+- As long as there is at least one enemy within 100 distance from the player, any other enemy has to be at a distance more than 150 from the player (some combats may not allow this) to be considered out of combat. If the player's distance from the nearest enemy exceeds 100 (again, some combats may not allow this), combat ends.
+- Participants with any form of teleportation can move once without using up their turn, and the range of their movement is limited only by their teleportation. In essence, during each of their unskipped turns, they can move once and then attack or move again.
 - Having low enough Spirit during combat causes the player to panic and be forced to move randomly during some turns until Spirit stabilises.
 - Outgoing damage is based on only the equipped weapon(s) which can attack an enemy at the chosen range. If the player chooses to attack an enemy outside the range of all of the player's equipped weapons, the turn will simply fail.
 - Some spells may require the caster to skip one or more rounds (not turns) before or after the their usage. How many rounds need to be skipped depends entirely on the spell, and is not affected by the caster's Athletic skill.
