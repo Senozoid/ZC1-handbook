@@ -54,16 +54,15 @@ Physical damage is a vector of three dimensions. The three coefficients of physi
 
 - Outgoing physical damage is determined by the attacker’s equipped weapon(s), Strength attribute, Dmg modifiers, Martial skill and the defender’s Martial skill.
 - The maximum damage potential of a weapon is its Power, and the further the total Weight of equipped weapon(s) exceeds the Strength of the wielder, the less effective each weapon will become in proportion to its Power.
-- If the Martial skill of a combatant is lower than that of the opponent's, the former's outgoing damage will be reduced, and the latter's increased. If the defender's Martial skill is double or more of that of the attacker's, the former will completely evade every attack from the latter.
+- If the Martial skill of the attacker is lower than that of the defender, for each attack from the former, the latter has a chance to completely evade it. In that case, the chance of the attacker's hits to connect is given by the ratio of the attacker's and the defender's Martial skills. If the attack is evaded, any accompanying effects are also evaded.
 
 #### Calculations:
 
 ```
+Chance to hit = min(1, Martial/OppMartial)
 WeaponDam = min(Power, Power*Strength/TotalWeight)
 BaseDmg = Sum of valid WeaponDams
-E = max(0, (2*Martial-OppMartial)/Martial)
-Outgoing = Mod(E*BaseDmg)
-[In the Stats screen, E = 1]
+Outgoing = Mod(BaseDmg)
 ```
 
 ### Taking Damage
