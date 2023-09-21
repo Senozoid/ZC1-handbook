@@ -36,7 +36,8 @@ Half-giants are towering hulks of inhuman strength, but despite their obvious ph
 
 ## Overview
 
-- Combat is turn-based and symmetric. The number of turns each participant gets in a round is equal to the participant's Athletic skill, which also determines the turn order, except if the battle starts with an ambush (then the attacked team misses the first round).
+- Combat is turn-based and symmetric. The Athletic skills of the participants determine the turn order and the number of turns each participant gets in a round, except if the battle starts with an ambush (then the attacked team misses the first round).
+- The turn distribution in each round with respect to Athletic skill is: `10,9,8,7,6,5,4,3,2,1,10,9,8,7,6,10,5,9,8,4,7,10,9,6,3,8,10,5,7,9,10,8,6,4,2,9,7,10,5,8,9,6,3,10,7,8,4,9,10,5,6,7,8,9,10`.
 - During their turns, participants have the option to Move or use a Spell instead of attacking with their weapons.
 - Moving is one-dimensional, and the maximum distance moved per turn is also equal to the participant’s Athletic skill, unless teleportation is involved.
 - As long as there is at least one enemy within 100 distance from the player, any other enemy has to be at a distance more than 150 from the player (some combats may not allow this) to be considered out of combat. If the player's distance from the nearest enemy exceeds 100 (again, some combats may not allow this), combat ends.
@@ -92,7 +93,7 @@ EffDamage = Inc*Inc/(Inc+Mod(BaseDef))
 ![Graph: Damage taken wrt incoming damage, at constant Def values.](Handbook_files/wrtinc-def-10-50-200.png)
  \
 The above graph shows how received damage may change with respect to incoming damage at different fixed values of the Def attribute. More damage is blocked as the incoming damage increases, but the percentage of the incoming damage being blocked becomes smaller. \
-For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtraction=4, percentage reduction=80%), and a damage of 30 may be reduced to 18 (subtraction=12, percentage reduction=40%). So as the incoming damage increases (5 to 30), the amount of the subtracted damage increases (4 to 12), but its value in relation to the total incoming damage, decreases (80% to 40%). [[also see Appendix-1]](#appendix-1-a-rant-about-ac)
+For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtraction=4, percentage reduction=80%), and a damage of 30 may be reduced to 18 (subtraction=12, percentage reduction=40%). So as the incoming damage increases (5 to 30), the amount of the subtracted damage increases (4 to 12), but its value in relation to the total incoming damage, decreases (80% to 40%). [[also see Appendix-1]](Appendices.md#appendix-1-a-rant-about-ac)
 
 ## Modifiers
 
