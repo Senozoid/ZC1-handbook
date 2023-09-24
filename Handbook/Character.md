@@ -29,3 +29,13 @@ _"Half-giants have been allies to dwarves since dawn of time, even though, one m
 
 People of this race are not a common sight, but their presence is hard to miss. \
 Half-giants are towering hulks of inhuman strength, but despite their obvious physical advantages, they do not naturally live longer than sixty years. They are pale of skin and their hair varies from the colour of ash to the colour of snow.
+
+## Player Classes
+
+## Primary Attributes
+
+## Skills
+
+## Secondary Attributes
+
+## Quirks
