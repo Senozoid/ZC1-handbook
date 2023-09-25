@@ -2,7 +2,15 @@
 
 ## Zenerian Chronicles: Shadow of Doom
 
-## Installation
+## Getting Started
+
+### Installation
+
+### First Setup
+
+### Character Creation
+
+### First Playthrough Tips
 
 ## About the Handbook
 
