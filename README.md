@@ -2,7 +2,7 @@ This is a work in progress. Not all the links may be operational, and the conten
 
 ![banner](Handbook/Handbook_files/banner.png)
   \
-Certain ISPs (like Jio) block _raw.githubusercontent.com_ for some reason. This causes the images to not load. If you have that problem, use a different ISP, or use a VPN to bypass the block. If you can see the banner above, you don't have that problem.
+Certain ISPs (like Jio) block _raw.githubusercontent.com_ for some reason. This causes repository images to not load. If you have that problem, use a different ISP, or use a VPN to bypass the block. If you can see the banner above, you don't have that problem.
 
 # Table of Contents
 
