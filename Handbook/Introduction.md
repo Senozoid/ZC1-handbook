@@ -1,6 +1,6 @@
 # Introduction
 
-## About the Game
+## Zenerian Chronicles: Shadow of Doom
 
 ## Installation
 
