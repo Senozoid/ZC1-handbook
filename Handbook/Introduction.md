@@ -6,9 +6,11 @@
 
 ### Installation
 
-### First Setup
+### Initial Setup
 
 ### Character Creation
+
+### Brief Gameplay Overview
 
 ### First Playthrough Tips
 
