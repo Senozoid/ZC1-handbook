@@ -12,7 +12,7 @@
 - Having low enough Spirit during combat causes the player to panic and be forced to move randomly during some turns until Spirit stabilises.
 - Outgoing damage is based on only the equipped weapon(s) which can attack an enemy at the chosen range. If the player chooses to attack an enemy outside the range of all of the player's equipped weapons, the turn will simply fail.
 - Some spells may require the caster to skip one or more rounds (not turns) before or after the their usage. How many rounds need to be skipped depends entirely on the spell, and is not affected by the caster's Athletic skill.
-- Nothing in the inventory except Specials (potions and glyphs are examples of specials) can be accessed during combat, and no extra turn is lost by their usage, unless specified otherwise in the item description. However, the inventory cannot be accessed out of turn.
+- Nothing in the inventory except weapons and consumables (potions and glyphs are examples of consumables) can be accessed during combat, and using a consumable does not cost a turn, unless specified otherwise in the item description. However, the inventory cannot be accessed out of turn.
 
 ## Physical Damage
 
