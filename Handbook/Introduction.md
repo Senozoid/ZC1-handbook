@@ -4,6 +4,10 @@
 
 ## Getting Started
 
+### Downloading
+
+There are multiple ways to download the game...
+
 ### Installation
 
 ### Initial Setup
