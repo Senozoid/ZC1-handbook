@@ -2,11 +2,12 @@
 
 ## Overview
 
-- Combat is turn-based and symmetric. The Athletic skills of the participants determine the turn order and the number of turns each participant gets in a round, except if the battle starts with an ambush (then the surprised team misses the first round).
-- The turn distribution in each round with respect to Athletic skill is: `10,9,8,7,6,5,4,3,2,1,10,9,8,7,6,10,5,9,8,4,7,10,9,6,3,8,10,5,7,9,10,8,6,4,2,9,7,10,5,8,9,6,3,10,7,8,4,9,10,5,6,7,8,9,10`.
-- As long as there is at least one enemy within 100 distance from the player, any other enemy has to be at a distance more than 150 from the player (some combats may not allow this) to be considered out of combat. If the player's distance from the nearest enemy exceeds 100 (again, some combats may not allow this), combat ends.
+- Combat is turn-based and symmetric. The Athletic skill of each participant determines both order and frequency of the participant's turns in every round, except if the battle starts with an ambush (then the surprised team misses the first round).
+- The turn distribution in each round with respect to Athletic skill is: `10,9,8,7,6,5,4,3,2,1,10,9,8,7,6,10,5,9,8,4,7,10,9,6,3,8,10,5,7,9,10,8,6,4,2,9,7,10,5,8,9,6,3,10,7,8,4,9,10,5,6,7,8,9,10`. Note that the number of turns each participant gets in a round is equal to the Athletic skill of the participant.
+- Combat continues as long as the player is alive and there is at least one active hostile within 100 distance from the player. In other words, if the player's health falls to 0, if the last enemy is neutralised, or if the player's distance from the nearest enemy exceeds 100 (some combats may not allow this), combat ends.
+- As long as there is at least one active hostile within 100 distance from the player, any other participant has to be at a distance more than 150 from the player (some combats may not allow this) to be considered out of combat. A combatant once considered to be out of combat does not have any part in the combat for the rest of its duration.
 - During their turns, participants have the option to attack with their weapons, change weapons, move, or use a spell.
-- Moving is one-dimensional, and the maximum distance moved per turn is also equal to the participant’s Athletic skill, unless teleportation is involved.
+- Moving is one-dimensional, and the maximum distance moved per turn is equal to the participant’s Athletic skill, unless teleportation is involved.
 - Participants with any form of teleportation can move once before using each of their regular turns, and the range of their movement is limited only by their teleportation. In essence, during each of their unskipped turns, they can move once and then take another action (and yes, the second action may also be movement).
 - Having low enough Spirit during combat causes the player to panic and be forced to move randomly during some turns until Spirit stabilises.
 - Outgoing damage is based on only the equipped weapon(s) which can attack an enemy at the chosen range. If the player chooses to attack an enemy outside the range of all of the player's equipped weapons, the turn will simply fail.
