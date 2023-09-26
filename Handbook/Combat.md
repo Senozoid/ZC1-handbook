@@ -2,12 +2,12 @@
 
 ## Overview
 
-- Combat is turn-based and symmetric. The Athletic skills of the participants determine the turn order and the number of turns each participant gets in a round, except if the battle starts with an ambush (then the attacked team misses the first round).
+- Combat is turn-based and symmetric. The Athletic skills of the participants determine the turn order and the number of turns each participant gets in a round, except if the battle starts with an ambush (then the surprised team misses the first round).
 - The turn distribution in each round with respect to Athletic skill is: `10,9,8,7,6,5,4,3,2,1,10,9,8,7,6,10,5,9,8,4,7,10,9,6,3,8,10,5,7,9,10,8,6,4,2,9,7,10,5,8,9,6,3,10,7,8,4,9,10,5,6,7,8,9,10`.
-- During their turns, participants have the option to Move or use a Spell instead of attacking with their weapons.
-- Moving is one-dimensional, and the maximum distance moved per turn is also equal to the participant’s Athletic skill, unless teleportation is involved.
 - As long as there is at least one enemy within 100 distance from the player, any other enemy has to be at a distance more than 150 from the player (some combats may not allow this) to be considered out of combat. If the player's distance from the nearest enemy exceeds 100 (again, some combats may not allow this), combat ends.
-- Participants with any form of teleportation can move once without using up their turn, and the range of their movement is limited only by their teleportation. In essence, during each of their unskipped turns, they can move once and then attack or move again.
+- During their turns, participants have the option to attack with their weapons, change weapons, move, or use a spell.
+- Moving is one-dimensional, and the maximum distance moved per turn is also equal to the participant’s Athletic skill, unless teleportation is involved.
+- Participants with any form of teleportation can move once before using each of their regular turns, and the range of their movement is limited only by their teleportation. In essence, during each of their unskipped turns, they can move once and then take another action (and yes, the second action may also be movement).
 - Having low enough Spirit during combat causes the player to panic and be forced to move randomly during some turns until Spirit stabilises.
 - Outgoing damage is based on only the equipped weapon(s) which can attack an enemy at the chosen range. If the player chooses to attack an enemy outside the range of all of the player's equipped weapons, the turn will simply fail.
 - Some spells may require the caster to skip one or more rounds (not turns) before or after the their usage. How many rounds need to be skipped depends entirely on the spell, and is not affected by the caster's Athletic skill.
@@ -55,10 +55,12 @@ EffDamage = Inc*Inc/(Inc+Mod(BaseDef))
 ```
 
 ![Graph: Damage taken wrt incoming damage, at constant Def values.](Handbook_files/wrtinc-def-10-50-200.png)
+
 <details>
 <summary>If you cannot see this image on GitHub...</summary>
 
 Certain ISPs (like Jio) block _raw.githubusercontent.com_ for some reason, which causes repository images to not load. If you have this problem, please use a VPN or connect through a different ISP.
+
 </details>
 
 The above graph shows how received damage may change with respect to incoming damage at different fixed values of the Def attribute. More damage is blocked as the incoming damage increases, but the percentage of the incoming damage being blocked becomes smaller. \
