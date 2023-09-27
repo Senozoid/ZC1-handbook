@@ -7,7 +7,6 @@
 - Combat continues as long as the player is alive and there is at least one active hostile within 100 distance from the player. In other words, if the player's health falls to 0, if the last enemy is neutralised, or if the player's distance from the nearest enemy exceeds 100 (some combats may not allow this), combat ends.
 - As long as there is at least one active hostile within 100 distance from the player, any other participant has to be at a distance more than 150 from the player (some combats may not allow this) to be considered out of combat. A combatant once considered to be out of combat does not have any part in the combat for the rest of its duration.
 - Having low enough Spirit during combat has a chance to trigger panic in a participant during each of the participant's turns. If panic is triggered in a turn, the combatant is forced to move randomly (instead of acting as desired) in that turn.
-- Some spells may require the caster to skip one or more rounds (not turns) before or after the their usage. How many rounds need to be skipped depends entirely on the spell, and is not affected by the caster's Athletic skill.
 - Nothing in the inventory except weapons and consumables (potions and glyphs are examples of consumables) can be accessed during combat. Changing weapons costs a turn, but using a consumable does not cost a turn, unless specified otherwise in the item description. However, the inventory cannot be accessed out of turn.
 
 ## Physical Damage
@@ -74,6 +73,11 @@ For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtracti
 - Participants with any form of teleportation can move once before using each of their regular turns, and the range of their movement is limited only by their teleportation. In essence, during each of their unskipped turns, they can move once and then take another action (and yes, the second action may also be movement). Unlike other participants, when panic is triggered, a teleporter moves randomly twice instead of once.
 
 ## Spellcasting
+
+### Overview
+
+- To cast a spell, a participant needs to start preparing it. Once the preparation has started, it may be cancelled during the caster's turn. Starting to prepare a spell, or intentionally cancelling it, costs a turn each. The preparation may take zero or more rounds (not turns), which depends on the spell and is not affected by the caster's skills.
+- The arcana required to cast a spell is spent when the preparation begins, and is recovered if the casting is intentionally cancelled, but not if it fails or is interrupted. The effect of a spell begins only after the preparation is complete. A caster may prepare only one spell at a time, and as long as a spell is being prepared, the caster cannot do anything else without cancelling it.
 
 ## Modifiers
 
