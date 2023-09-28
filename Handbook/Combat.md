@@ -2,7 +2,7 @@
 
 ## Overview
 
-- Combat is turn-based and symmetric. During their turns, participants have the option to attack with their weapons, change weapons, move, or use a spell. Both order and frequency of a participant's turns in each round is determined by the participant's **rate**, which, unless modified, is equal to Athletic skill. However, if the battle starts with an ambush, then the surprised team misses the first round.
+- Combat is turn-based and symmetric. During their turns, participants have the option to attack with their weapons, change weapons, move, or use a spell. Both order and frequency of a participant's turns in each round is determined by the participant's [turnrate](Glossary.md#turnrate), which, unless modified, is equal to Athletic skill. However, if the battle starts with an ambush, then the surprised team misses the first round.
 - Combat continues as long as the player is alive and there is at least one active hostile within 100 distance from the player. In other words, if the player's health falls to 0, if the last enemy is neutralised, or if the player's distance from the nearest enemy exceeds 100 (some combats may not allow this), combat ends.
 - As long as there is at least one active hostile within 100 distance from the player, any other participant has to be at a distance more than 150 from the player (some combats may not allow this) to be considered out of combat. A combatant once considered to be out of combat does not have any part in the combat for the rest of its duration.
 - Having low enough Spirit during combat has a chance to trigger panic in a participant during each of the participant's turns. If panic is triggered in a turn, the combatant is forced to move randomly (instead of acting as desired) in that turn.
@@ -11,7 +11,7 @@
 ## Physical Damage
 
 - Outgoing damage is based on only the equipped weapon(s) which can attack an enemy at the chosen range. If the player chooses to attack an enemy outside the range of all of the player's equipped weapons, the turn will simply fail.
-- Physical damage has 3 components, which are blunt damage, cutting damage and piercing damage. All calculations are done separately and symmetrically regarding these components. Both the Def and Dmg attributes, as well as weapon Power and armour Rating, consider the three components to be independent of each other.
+- Physical damage has 3 components, which are blunt damage, cutting damage and piercing damage. All calculations are done separately and symmetrically regarding these components. Both the [Def](Glossary.md#def) and [Dmg](Glossary.md#dmg) attributes, as well as weapon [Power](Glossary.md#power) and armour [Rating](Glossary.md#rating), consider the three components to be independent of each other.
 
 ### Dealing Damage
 
@@ -19,7 +19,7 @@
 
 - Outgoing physical damage is determined by the attacker’s equipped weapon(s), Strength attribute, Dmg modifiers, Martial skill and the defender’s Martial skill.
 - The maximum damage potential of a weapon is its Power, and the further the total Weight of equipped weapon(s) exceeds the Strength of the wielder, the less effective each weapon will become in proportion to its Power.
-- The chance of an attack to not miss, is given by the ratio of the attacker's **accuracy** and the defender's **dodge**. Both accuracy and dodge, unless modified, are equal to the corresponding combatants' Martial skills. If the attack is evaded, any accompanying effects are also evaded.
+- The chance of an attack to not miss, is given by the ratio of the attacker's [accuracy](Glossary.md#accuracy) and the defender's [dodge](Glossary.md#dodge). Both accuracy and dodge, unless modified, are equal to the corresponding combatants' Martial skills. If the attack is evaded, any accompanying effects are also evaded.
 
 #### Calculations:
 
@@ -35,7 +35,7 @@ Outgoing = Mod(BaseDmg)
 #### Things to note:
 
 - The attacker’s outgoing damage is the defender’s incoming damage. The damage taken is determined by the incoming damage, the defender’s equipped armour piece(s) (including shield) and Def modifiers.
-- The further the total Weight of equipped apparel exceeds the wearer's Strength, the slower the wearer becomes. This affects both rate and speed of the wearer.
+- The further the total Weight of equipped apparel exceeds the wearer's Strength, the slower the wearer becomes. This affects both turnrate and speed of the wearer.
 - The defence potential of each piece of armour is its Rating. Each piece of physical armour contributes a fixed percentage to the wearer's Def attributes, for instance a cuirass has more effect on Def even if a pair of gauntlets have the same Rating, because torso armour protects 50% of the body, and hand armour protects only 5%.
 - The percentage contribution of a shield to the Def attribute is ten times the wielder's Martial skill. However, not only does equipping a shield prohibit the usage of both hands for weapon, but the shield Weight counts towards total apparel Weight.
 - The Def attribute always reduces damage taken, but never completely eliminates it. The higher the incoming damage, the more damage will be subtracted, but the percentage of the damage reduced will become smaller. The amount of damage subtracted can never exceed the value of Def.
@@ -63,7 +63,7 @@ For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtracti
 
 ## Movement
 
-- Moving is one-dimensional, and unless teleportation is involved, the maximum distance moved per turn is given by the participant's **speed**, which, unless modified, is equal to Athletic skill.
+- Moving is one-dimensional, and unless teleportation is involved, the maximum distance moved per turn is given by the participant's [speed](Glossary.md#speed), which, unless modified, is equal to Athletic skill.
 - Participants with any form of teleportation can move once before using each of their regular turns, and the range of their movement is limited only by their teleportation. In essence, during each of their unskipped turns, they can move once and then take another action (and yes, the second action may also be movement). Unlike other participants, when panic is triggered, a teleporter moves randomly twice instead of once.
 
 ## Spellcasting
@@ -75,7 +75,7 @@ For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtracti
 
 Modifiers can affect these stats of a combatant during each turn:
 
-- rate
+- turnrate
 - speed
 - accuracy
 - dodge
