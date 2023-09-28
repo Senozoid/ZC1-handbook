@@ -22,7 +22,7 @@
 
 - Outgoing physical damage is determined by the attacker’s equipped weapon(s), Strength attribute, Dmg modifiers, Martial skill and the defender’s Martial skill.
 - The maximum damage potential of a weapon is its Power, and the further the total Weight of equipped weapon(s) exceeds the Strength of the wielder, the less effective each weapon will become in proportion to its Power.
-- If the Martial skill of the attacker is lower than that of the defender, for each attack from the former, the latter has a chance to completely evade it. In that case, the chance of the attacker's hits to connect is given by the ratio of the attacker's and the defender's Martial skills. If the attack is evaded, any accompanying effects are also evaded.
+- The chance of an attack to not miss, is given by the ratio of the attacker's accuracy and the defender's dodge. Both accuracy and dodge, unless modified, are equal to the corresponding combatants' Martial skills. If the attack is evaded, any accompanying effects are also evaded.
 
 #### Calculations:
 
@@ -41,8 +41,7 @@ Outgoing = Mod(BaseDmg)
 - The further the total Weight of equipped apparel exceeds the wearer's Strength, the slower the wearer becomes.
 - The defence potential of each piece of armour is its Rating. Each piece of physical armour contributes a fixed percentage to the wearer's Def attributes, for instance a cuirass has more effect on Def even if a pair of gauntlets have the same Rating, because torso armour protects 50% of the body, and hand armour protects only 5%.
 - The percentage contribution of a shield to the Def attribute is ten times the wielder's Martial skill. However, not only does equipping a shield prohibit the usage of both hands for weapon, but the shield Weight counts towards total apparel Weight.
-- The Def attribute always reduces damage taken, but never completely eliminates it. The higher the incoming damage, the more damage will be subtracted, but the percentage of the damage reduced will become smaller.
-- The amount of damage subtracted can never exceed the value of Def.
+- The Def attribute always reduces damage taken, but never completely eliminates it. The higher the incoming damage, the more damage will be subtracted, but the percentage of the damage reduced will become smaller. The amount of damage subtracted can never exceed the value of Def.
 
 #### Calculations:
 
