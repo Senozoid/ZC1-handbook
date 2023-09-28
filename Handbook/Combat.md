@@ -80,14 +80,23 @@ For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtracti
 
 ## Modifiers
 
-Modifiers change the effective Dmg or Def attribute of the combatant during each turn. The order of applying combat modifiers is as below:
+Modifiers can affect these stats of a combatant during each turn:
 
-Racial, Class, Enchantment, Effect, Opposition, Chaos \
+- rate
+- speed
+- accuracy
+- dodge
+- Dmg
+- Def
+
+The order of applying combat modifiers is as below:
+
+Racial -> Class -> Enchantment -> Effect -> Opposition -> Chaos \
 [Within each type, additive modifiers are applied on top of multiplicative ones]
 
 Enchantments come from equipped items. \
 Effects come from spells, abilities, blessings, penalties and carried items. \
-Opposition modifiers are effectiveness buffs and debuffs against certain enemies or equipments. \
+Opposition modifiers are effectiveness buffs and debuffs against certain enemies or equipment. These may come from the same sources as Enchantments and Effects, but are applied later. \
 Chaos is a somewhat random additive modifier. Chaos level is determined at the beginning of combat. There are 5 levels of Chaos: Low, Mild, Moderate, High, Extreme. These are the respective ranges of Chaos at each level:
 
 * Low = -2 to +2
