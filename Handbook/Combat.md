@@ -38,7 +38,7 @@ Outgoing = Mod(BaseDmg)
 #### Things to note:
 
 - The attacker’s outgoing damage is the defender’s incoming damage. The damage taken is determined by the incoming damage, the defender’s equipped armour piece(s) (including shield) and Def modifiers.
-- The further the total Weight of equipped apparel exceeds the wearer's Strength, the slower the wearer becomes.
+- The further the total Weight of equipped apparel exceeds the wearer's Strength, the slower the wearer becomes. This affects both rate and speed of the wearer.
 - The defence potential of each piece of armour is its Rating. Each piece of physical armour contributes a fixed percentage to the wearer's Def attributes, for instance a cuirass has more effect on Def even if a pair of gauntlets have the same Rating, because torso armour protects 50% of the body, and hand armour protects only 5%.
 - The percentage contribution of a shield to the Def attribute is ten times the wielder's Martial skill. However, not only does equipping a shield prohibit the usage of both hands for weapon, but the shield Weight counts towards total apparel Weight.
 - The Def attribute always reduces damage taken, but never completely eliminates it. The higher the incoming damage, the more damage will be subtracted, but the percentage of the damage reduced will become smaller. The amount of damage subtracted can never exceed the value of Def.
