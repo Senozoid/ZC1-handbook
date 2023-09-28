@@ -14,7 +14,7 @@ There are multiple ways to download the game...
 
 ### Character Creation
 
-### Brief Gameplay Overview
+### Gameplay Basics
 
 ### First Playthrough Tips
 

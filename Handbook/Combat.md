@@ -1,6 +1,6 @@
 # Combat
 
-## Basics
+## Overview
 
 - Combat is turn-based and symmetric. The Athletic skill of each participant determines both order and frequency of the participant's turns in every round, except if the battle starts with an ambush (then the surprised team misses the first round). During their turns, participants have the option to attack with their weapons, change weapons, move, or use a spell.
 - The number of turns a participant gets in each round is given by the participant's rate, which, unless modified, is equal to Athletic skill. The turn distribution in each round with respect to rate is: `10,9,8,7,6,5,4,3,2,1,10,9,8,7,6,10,5,9,8,4,7,10,9,6,3,8,10,5,7,9,10,8,6,4,2,9,7,10,5,8,9,6,3,10,7,8,4,9,10,5,6,7,8,9,10`.
@@ -10,8 +10,6 @@
 - Nothing in the inventory except weapons and consumables (potions and glyphs are examples of consumables) can be accessed during combat. Changing weapons costs a turn, but using a consumable does not cost a turn, unless specified otherwise in the item description. However, the inventory cannot be accessed out of turn.
 
 ## Physical Damage
-
-### Overview
 
 - Outgoing damage is based on only the equipped weapon(s) which can attack an enemy at the chosen range. If the player chooses to attack an enemy outside the range of all of the player's equipped weapons, the turn will simply fail.
 - Physical damage has 3 components, which are blunt damage, cutting damage and piercing damage. All calculations are done separately and symmetrically regarding these components. Both the Def and Dmg attributes, as well as weapon Power and armour Rating, consider the three components to be independent of each other.
@@ -66,14 +64,10 @@ For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtracti
 
 ## Movement
 
-### Overview
-
 - Moving is one-dimensional, and unless teleportation is involved, the maximum distance moved per turn is given by the participant's speed, which, unless modified, is equal to Athletic skill.
 - Participants with any form of teleportation can move once before using each of their regular turns, and the range of their movement is limited only by their teleportation. In essence, during each of their unskipped turns, they can move once and then take another action (and yes, the second action may also be movement). Unlike other participants, when panic is triggered, a teleporter moves randomly twice instead of once.
 
 ## Spellcasting
-
-### Overview
 
 - To cast a spell, a participant needs to start preparing it. Once the preparation has started, it may be cancelled during the caster's turn. Starting to prepare a spell, or intentionally cancelling it, costs a turn each. The preparation may take zero or more rounds (not turns), which depends on the spell and is not affected by the caster's skills.
 - The arcana required to cast a spell is spent when the preparation begins, and is recovered if the casting is intentionally cancelled, but not if it fails or is interrupted. The effect of a spell begins only after the preparation is complete. A caster may prepare only one spell at a time, and as long as a spell is being prepared, the caster cannot do anything else without cancelling it.
