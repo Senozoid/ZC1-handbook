@@ -7,9 +7,26 @@ I did not want to implement AC the way it works in D&D, because it feels to me l
 Here is a random graph that was lying around in my screenshots and was too nice looking to waste. It shows how effective damage decreases with increasing defence, when the incoming damage is constant. Also, it very accurately represents my life since I became an adult:
 
 ![Graph: Received damage wrt Def, at constant incoming.](Handbook_files/wrtdef-inc-20-40-70.png)
+
 <details>
 <summary>If you cannot see this image on GitHub...</summary>
 
 Certain ISPs (like Jio) block _raw.githubusercontent.com_ for some reason, which causes repository images to not load. If you have this problem, please use a VPN or connect through a different ISP.
+
 </details>
 
+## Appendix-2: Combat and Time
+
+The idea is that each round lasts for 5 seconds. The turnrate of a combatant is supposed to be the number of actions said combatant can take within those 5 seconds (disregarding teleportation). So a combatant with a turnrate of 10 can make an attack every half second, and so on. Therefore, the number of turns each combatant gets in a round is equal to the combatant's turnrate, and because combatants with a higher turnrate should also be quicker at the draw, all the combatants get their first turns in the descending order of their turnrates. The higher their turnrates, the quicker they get their next turn as well. The turn distribution in each round with respect to turnrate is as following:
+
+```
+10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 10, 9, 8, 7, 6... 
+10, 5, 9, 8, 4, 7, 10, 9, 6, 3, 8... 
+10, 5, 7, 9, 10, 8, 6, 4, 2, 9, 7... 
+10, 5, 8, 9, 6, 3, 10, 7, 8, 4, 9... 
+10, 5, 6, 7, 8, 9, 10... 
+
+[Each line represents one second of combat]
+```
+
+What this list of numbers means is that each round is divided into 55 uneven slots. The game iterates through the list, and at each slot, all the combatants with turnrate equal to the given number gets their turns. If two combatants have the same turnrate and belong to the same team then whoever appears earlier in that team's list goes first, but if they have the same turnrate and belong to opposing teams then the one who is not in the player's party goes first. If a timespan has to last for n rounds, that means it lasts for 55n slots, or in other words, it ends before the same slot, n rounds later. Here, timespan refers to anything from the duration of an effect to the preparation time for a spell.
