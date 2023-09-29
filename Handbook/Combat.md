@@ -18,7 +18,7 @@
 #### Things to note:
 
 - Outgoing physical damage is determined by the attacker’s equipped weapon(s), Strength attribute, Dmg modifiers, Martial skill and the defender’s Martial skill.
-- The maximum damage potential of a weapon is its Power, and the further the total Weight of equipped weapon(s) exceeds the Strength of the wielder, the less effective each weapon will become in proportion to its Power.
+- The damage potential of a weapon is its Power, and the further the total Weight of equipped weapon(s) exceeds the Strength of the wielder, the less effective each weapon will become in proportion to its Power.
 - The chance of an attack to not miss, is given by the ratio of the attacker's [accuracy](Glossary.md#accuracy) and the defender's [dodge](Glossary.md#dodge). Both accuracy and dodge, unless modified, are equal to the corresponding combatants' Martial skills. If the attack is evaded, any accompanying effects are also evaded.
 
 #### Calculations:
