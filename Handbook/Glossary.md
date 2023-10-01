@@ -14,7 +14,9 @@
 
 ### Dmg
 
-### Dodge
+## E
+
+### Evasion
 
 ## M
 
