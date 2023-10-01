@@ -4,6 +4,8 @@
 
 ### Accuracy
 
+This is a combat stat that increases the likelihood of the combatant's physical attacks successfully connecting. Unless modified, accuracy is equal to the combatant's Martial skill.
+
 ### Athletic skill
 
 ### Attributes
@@ -17,6 +19,8 @@
 ## E
 
 ### Evasion
+
+This is a combat stat that increases the likelihood of the physical attacks directed at the combatant to miss. Unless modified, evasion is equal to the combatant's Martial skill.
 
 ## M
 
