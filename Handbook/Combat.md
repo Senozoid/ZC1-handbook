@@ -71,9 +71,9 @@ For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtracti
 - To cast a spell, a participant needs to start preparing it. Once the preparation has started, it may be cancelled during the caster's turn. Starting to prepare a spell, or intentionally cancelling it, costs a turn each. The preparation may take zero or more rounds (not turns), which depends on the spell and is not affected by the caster's skills.
 - The arcana required to cast a spell is spent when the preparation begins, and is recovered if the casting is intentionally cancelled, but not if it fails or is interrupted. The effect of a spell begins only after the preparation is complete. A caster may prepare only one spell at a time, and as long as a spell is being prepared, the caster cannot do anything else without cancelling it.
 
-## Modifiers
+## Combat Modifiers
 
-Modifiers can affect these stats of a combatant during each turn:
+Combat modifiers are the modifiers which affect the combat stats of a combatant during each turn of combat. The following stats are combat stats:
 
 - turnrate
 - speed
