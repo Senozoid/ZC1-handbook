@@ -26,13 +26,13 @@
 
 ### Power
 
-This is the attribute of a weapon which determines its effectiveness. It has three components for the three types of physical damage, and the higher each of these values are, the higher damage of that type the weapon can potentially output.
+This is the property of a weapon which determines its effectiveness. It has three components for the three types of physical damage, and the higher each of these values are, the higher damage of that type the weapon can potentially output.
 
 ## R
 
 ### Rating
 
-This is the attribute of an armour piece which determines its potential effectiveness. It has three components for the three types of physical damage, and the higher each of these values are, the higher damage of that type the armour piece can potentially resist. Usually, armour pieces made of similar materials have similar rating, even if the respective percentage contributions are different. For example, a steel gauntlet and a steel cuirass should have the same rating, even though one offers more protection than the other.
+This is the property of an armour piece which determines its potential effectiveness. It has three components for the three types of physical damage, and the higher each of these values are, the higher damage of that type the armour piece can potentially resist. Usually, armour pieces made of similar materials have similar rating, even if the respective percentage contributions are different. For example, a steel gauntlet and a steel cuirass should have the same rating, even though one offers more protection than the other.
 
 ## S
 
