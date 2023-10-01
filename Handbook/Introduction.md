@@ -1,5 +1,7 @@
 # Introduction
 
+This is a work in progress, there is nothing in this file yet. Check [Combat](Combat.md), [Appendix](Appendix.md) or [Character](Character.md) instead.
+
 ## Zenerian Chronicles: Shadow of Doom
 
 ## Getting Started
