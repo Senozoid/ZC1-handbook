@@ -73,16 +73,7 @@ For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtracti
 
 ## Combat Modifiers
 
-Combat modifiers are the modifiers which affect the combat stats of a combatant during each turn of combat. The following stats are combat stats:
-
-- turnrate
-- speed
-- accuracy
-- evasion
-- Dmg
-- Def
-
-The order of applying combat modifiers is as below:
+Combat modifiers modify [combat stats](Glossary.md#combat-stats), and are applied on top of skill modifiers. The order of applying combat modifiers is as below:
 
 Racial -> Class -> Enchantment -> Effect -> Opposition -> Chaos \
 [Within each type, additive modifiers are applied on top of multiplicative ones]
