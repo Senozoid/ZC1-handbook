@@ -10,6 +10,12 @@ This is a combat stat that increases the likelihood of the combatant's physical 
 
 ### Attributes
 
+## C
+
+### Combat stats
+
+Combat stats are those stats which affect only combat, and not story gameplay. These consist of turnrate, speed, accuracy, evasion, Dmg and Def.
+
 ## D
 
 ### Def
