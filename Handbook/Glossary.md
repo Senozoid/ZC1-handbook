@@ -20,7 +20,7 @@ This is a combat stat that increases the likelihood of the combatant's physical 
 
 ### Evasion
 
-This is a combat stat that increases the likelihood of the physical attacks directed at the combatant to miss. Unless modified, evasion is equal to the combatant's Martial skill.
+This is a combat stat that increases the likelihood of the physical attacks directed at the combatant being evaded. Evasion also determines the effectiveness of shields equipped by the combatant. Unless modified, evasion is equal to the combatant's Martial skill.
 
 ## M
 
