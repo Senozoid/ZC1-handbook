@@ -1,22 +1,20 @@
 # Introduction
 
-This is a work in progress, there is nothing in this file yet. Check [Combat](Combat.md), [Appendix](Appendix.md) or [Character](Character.md) instead.
+There is nothing in this file yet. Check [Combat](Combat.md) instead.
 
 ## Zenerian Chronicles: Shadow of Doom
 
 ## Getting Started
 
-### Downloading
+### Prerequisites
 
-There are multiple ways to download the game...
+### Downloading and Installing
 
-### Installation
+## Itch.io
 
-If you download the game from GitHub...
+## GitHub
 
 ### Initial Setup
-
-Best font is Pelagiad...
 
 ### Character Creation
 
@@ -24,14 +22,16 @@ Best font is Pelagiad...
 
 ### First Playthrough Tips
 
-Always carry healing supplies...
-
-### Tinkering and Tampering
-
-You can mod the game...
-
 ## About the Handbook
 
 ## More Resources
 
+### Watch Tutorials
+
+### Meet Others
+
+### Tinkering and Tampering
+
 ## Credits
+
+## How You Can Support Me
