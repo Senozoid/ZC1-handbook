@@ -10,9 +10,9 @@ There is nothing in this file yet. Check [Combat](Combat.md) instead.
 
 ### Downloading and Installing
 
-## Itch.io
+#### Itch.io
 
-## GitHub
+#### GitHub
 
 ### Initial Setup
 
@@ -31,6 +31,8 @@ There is nothing in this file yet. Check [Combat](Combat.md) instead.
 ### Meet Others
 
 ### Tinkering and Tampering
+
+### Updating
 
 ## Credits
 
