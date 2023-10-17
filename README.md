@@ -6,6 +6,8 @@ This handbook contains, and frequently relies on, images. Certain ISPs (like Jio
 
 # Table of Contents
 
+Start with [Combat](Handbook/Combat.md), because the other files are bare-bones.
+
 - [Introduction](Handbook/Introduction.md)
 - [Character](Handbook/Character.md)
 - [Combat](Handbook/Combat.md)
