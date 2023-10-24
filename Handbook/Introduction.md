@@ -28,7 +28,9 @@ _A strange disturbance stirs the land. Stories have been heard of otherworldly t
 
 ## More Resources
 
-### Watch Tutorials
+### Watch Videos
+
+Start [here](https://youtube.com/playlist?list=PLlnbLhYdGinvZMR0VQSG5Zv-IIXZXDJlu&si=lSY72gupX4QU8ZS8).
 
 ### Meet Others
 
