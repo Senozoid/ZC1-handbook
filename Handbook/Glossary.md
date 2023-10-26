@@ -10,11 +10,15 @@ This is a combat stat that increases the likelihood of the combatant's physical 
 
 ### Attributes
 
+## B
+
+### Balance
+
 ## C
 
 ### Combat stats
 
-Combat stats are those stats which affect only combat, and not story gameplay. These consist of turnrate, speed, accuracy, evasion, Dmg and Def.
+Combat stats are those stats which affect only combat, and not story gameplay. These consist of accuracy, evasion, balance, reach, turnrate, speed, Dmg and Def.
 
 ## D
 
@@ -43,6 +47,8 @@ This is the property of a weapon which determines its effectiveness. It has thre
 ### Rating
 
 This is the property of an armour piece which determines its effectiveness. It has three components for the three types of physical damage, and the higher each of these values are, the higher damage of that type the armour piece can potentially resist. Usually, armour pieces made of similar materials have similar rating, even if the respective percentage contributions are different. For example, a steel helmet and a steel cuirass should have the same rating, even though one offers more protection than the other.
+
+### Reach
 
 ## S
 
