@@ -19,14 +19,15 @@
 
 - Outgoing physical damage is determined by the attacker’s equipped weapon(s), Strength attribute, Dmg modifiers, Martial skill and the defender’s Martial skill.
 - The damage potential of a weapon is its Power, and the further the total Weight of equipped weapon(s) exceeds the Strength of the wielder, the less effective each weapon will become in proportion to its Power.
+- If the wielder's Strength exceeds the total Weight of equipped weapon(s), there is a roll for extra damage where the maximum is the difference, and the minimum is 0.
 - The chance of an attack to not miss, is given by the ratio of the attacker's [accuracy](Glossary.md#accuracy) and the defender's [evasion](Glossary.md#evasion). Both accuracy and evasion, unless modified, are equal to the corresponding combatants' Martial skills. If the attack is evaded, any accompanying effects are also evaded.
 
 #### Calculations:
 
 ```
-Chance to hit = min(1, Martial/OppMartial)
+Hit probability = min(1, Accuracy/OppEvasion)
 WeaponDam = min(Power, Power*Strength/TotalWeight)
-BaseDmg = Sum of valid WeaponDams
+BaseDmg = Sum of valid WeaponDams + roll(0,Strength-TotalWeight)
 Outgoing = Mod(BaseDmg)
 ```
 
