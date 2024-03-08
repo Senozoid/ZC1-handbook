@@ -4,7 +4,7 @@ _A strange disturbance stirs the land. Stories have been heard of otherworldly t
 
 ![banner](Handbook_files/banner.png)
   \
-Shadow of Doom is a text-based **fantasy adventure** game with extensive player agency. It is more than just a simple CYOA game where you can only pick your path through the story. It is also a full-fledged **RPG** that offers playable fantasy races, skills, leveling, inventory system, even optional combat!
+Shadow of Doom is a text-based **fantasy adventure** game with extensive player agency. It is more than just a simple CYOA game where you can only pick your path through the story. It is also a full-fledged **RPG** that offers playable fantasy races, skills, levelling, inventory system, even optional combat!
 
 It does not require an internet connection, or even a graphics card. You can install and play it on your 10-year-old laptop if you want to. And I plan to eventually, but not anytime soon, make a version for you to play it on your phone as well.
 
