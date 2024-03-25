@@ -76,18 +76,6 @@ For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtracti
 
 Combat modifiers modify [combat stats](glossary.md#combat-stats), and are applied on top of skill modifiers. The order of applying combat modifiers is as below:
 
-Racial -> Class -> Enchantment -> Effect -> Opposition -> Chaos \
+Racial -> Class -> Effect -> Enchantment -> Opposition -> Chaos \
 [Within each type, additive modifiers are applied on top of multiplicative ones]
 
-Enchantments come from equipped items. \
-Effects come from spells, abilities, blessings, penalties and carried items. \
-Opposition modifiers are effectiveness buffs and debuffs against certain enemies or equipment. These may come from the same sources as Enchantments and Effects, but are applied later. \
-Chaos is a somewhat random additive modifier. Chaos level is determined at the beginning of combat. There are 5 levels of Chaos: Low, Mild, Moderate, High, Extreme. These are the respective ranges of Chaos at each level:
-
-* Low = -2 to +2
-* Mild = -6 to +6
-* Moderate = -12 to +12
-* High = -20 to +20
-* Extreme = -32 to +32
-
-In Azerog (Warmouth), Chaos level is never below Moderate. But in most other places, it is rarely above Moderate. Each gem of Nurileth elevates the combat by one Chaos level. The Chaos modifier is rolled during each turn based on the Chaos level and added to the attacking Dmg of that turn. Chaos also affects transactions but with a different mechanism.
