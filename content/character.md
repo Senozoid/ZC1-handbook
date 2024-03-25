@@ -1,6 +1,6 @@
 # Character
 
-This file is incomplete. Check out [Combat](Combat.md) instead.
+WIP: This file is incomplete.
 
 ## Playable Races
 
@@ -32,7 +32,25 @@ _"Half-giants have been allies to dwarves since dawn of time, even though, one m
 People of this race are not a common sight, but their presence is hard to miss. \
 Half-giants are towering hulks of inhuman strength, but despite their obvious physical advantages, they do not naturally live longer than sixty years. They are pale of skin and their hair varies from the colour of ash to the colour of snow.
 
-## Player Classes
+## Playable Classes
+
+Mage
+
+Sorcerer: -1 Martial, -1 Athletic. Gains +12 arcana every player level. Starts with effect "Unbound": once in each combat, when health falls to 5 or below (not when combat starts with low health), arcana is completely restored, and for the current round all discovered spells are temporarily activated. Starts with effect "Innate": instead of "learning" spells using charged rouns, "discovers" spells from just the scrolls; during a successful rest (fatigue=0), upto x (0 and +6 per player lvl) rouns are simulated and spent randomly to temporarily "activate" some discovered spells for that day, player can use only activated spells.
+
+Wizard: +2 Intellect, -1 Martial, -1 Social. Gains +2 Arcana for every spell level learnt. Starts with effect "Academia": allowed to learn upto x (1 and +1 per player lvl) spell levels during every successful rest as opposed to the normal 1. Starts with effect "Focus": level requirements for learning new powers and new moves are reduced and increased respectively by 2.
+
+Fighter
+
+Warrior: +2 Athletic, -1 Intellect, -1 Stealth. Gains +2 Strength per player level. Starts with effect "Berserk": once in each combat, when health falls to 5 or below (not when combat starts with low health), .
+
+Soldier: +2 Martial, -2 Stealth. Gains +5 health per player level. Starts with effect "Discipline": . Starts with effect "Strategy": .
+
+Rogue
+
+Thief: +2 Stealth, +1 Sensory, -1 Social, -1 Intellect. Starts with effect "Fleet": once in each combat, when health falls to 5 or below (not when combat starts with low health), can move once before each turn (like teleportation, but with normal range).
+
+Spy: +2 Social, -1 Martial. Starts with effect "Camouflage": . Starts with effect "Charm": .
 
 ## Primary Attributes
 
@@ -41,3 +59,5 @@ Half-giants are towering hulks of inhuman strength, but despite their obvious ph
 ## Secondary Attributes
 
 ## Quirks
+
+## Modifiers
