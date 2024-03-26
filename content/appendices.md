@@ -8,11 +8,6 @@ Here is a random graph that was lying around in my screenshots and was too nice 
 
 ![Graph: Received damage wrt Def, at constant incoming.](media/wrtdef-inc-20-40-70.png)
 
-<details>
-<summary>If you cannot see this image on GitHub...</summary>
-
-Certain ISPs (like Jio) block _raw.githubusercontent.com_ for some reason, which causes repository images to not load. If you have this problem, please use a VPN or connect through a different ISP.
-
 </details>
 
 ## Appendix-2: Combat and Time
