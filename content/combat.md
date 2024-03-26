@@ -52,11 +52,6 @@ EffDamage = Inc*Inc/(Inc+Mod(BaseDef))
 
 ![Graph: Damage taken wrt incoming damage, at constant Def values.](media/wrtinc-def-10-50-200.png)
 
-<details>
-<summary>If you cannot see this image on GitHub...</summary>
-
-Certain ISPs (like Jio) block _raw.githubusercontent.com_ for some reason, which causes repository images to not load. If you have this problem, please use a VPN or connect through a different ISP.
-
 </details>
 
 The above graph shows how received damage may change with respect to incoming damage at different fixed values of the Def attribute. More damage is blocked as the incoming damage increases, but the percentage of the incoming damage being blocked becomes smaller. \
