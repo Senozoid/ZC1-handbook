@@ -8,8 +8,6 @@ Here is a random graph that was lying around in my screenshots and was too nice 
 
 ![Graph: Received damage wrt Def, at constant incoming.](media/wrtdef-inc-20-40-70.png)
 
-</details>
-
 ## Appendix-2: Combat and Time
 
 The idea is that each round lasts for 5 seconds. The turnrate of a combatant is supposed to be the number of actions said combatant can take within those 5 seconds (disregarding teleportation). So a combatant with a turnrate of 10 can make an attack every half second, and so on. Therefore, the number of turns each combatant gets in a round is equal to the combatant's turnrate, and because combatants with a higher turnrate should also be quicker at the draw, all the combatants get their first turns in the descending order of their turnrates. The higher their turnrates, the quicker they get their next turn as well. The turn distribution in each round with respect to turnrate is as following:
