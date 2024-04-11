@@ -1,7 +1,5 @@
 # Character
 
-WIP: This file is incomplete.
-
 ## Playable Races
 
 One of the basic components of the player character's identity is their race. There are plans for 4 playable races: human, dwarf, elf, half-giant. However, in the early versions of the game, not all of them may be available to play.
