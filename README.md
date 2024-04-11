@@ -2,6 +2,7 @@
 
 # Overview
 
+- [How to Play](introduction/start.md)
 - [Introduction](introduction.md)
 - [Character](character.md)
 - [Combat](combat.md)

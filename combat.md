@@ -1,5 +1,7 @@
 # Combat
 
+> **NOTE:** Some mechanics have been changed, this page will be updated soon.
+
 ## Overview
 
 - Combat is turn-based and symmetric. During their turns, participants have the option to attack with their weapons, change weapons, move, or use a spell. Both order and frequency of a participant's turns in each round is determined by the participant's [turnrate](glossary.md#turnrate), which, unless modified, is equal to Athletic skill. However, if the battle starts with an ambush, then the surprised team misses the first round.
@@ -11,15 +13,15 @@
 ## Physical Damage
 
 - Outgoing damage is based on only the equipped weapon(s) which can attack an enemy at the chosen range. If the player chooses to attack an enemy outside the range of all of the player's equipped weapons, the turn will simply fail.
-- Physical damage has 3 components, which are blunt damage, cutting damage and piercing damage. All calculations are done separately and symmetrically regarding these components. Both the [Def](glossary.md#def) and [Dmg](glossary.md#dmg) attributes, as well as weapon [Power](glossary.md#power) and armour [Rating](glossary.md#rating), consider the three components to be independent of each other.
+- Physical damage has 3 components, which are blunt damage, cutting damage and piercing damage. All calculations are done separately and symmetrically regarding these components. Both the [defence](glossary.md#defence) and [damage](glossary.md#damage) stats, as well as [weapon power](glossary.md#power) and [armour rating](glossary.md#rating), consider the three components to be independent of each other.
 
 ### Dealing Damage
 
 #### Things to note:
 
-- Outgoing physical damage is determined by the attacker’s equipped weapon(s), Strength attribute, Dmg modifiers, Martial skill and the defender’s Martial skill.
-- The damage potential of a weapon is its Power, and the further the total Weight of equipped weapon(s) exceeds the Strength of the wielder, the less effective each weapon will become in proportion to its Power.
-- If the wielder's Strength exceeds the total Weight of equipped weapon(s), there is a roll for extra damage where the maximum is the difference, and the minimum is 0.
+- Outgoing physical damage is determined by the attacker’s equipped weapon(s), Strength attribute, damage modifiers, Martial skill and the defender’s Martial skill.
+- The damage potential of a weapon is its power, and the further the total weight of equipped weapon(s) exceeds the Strength of the wielder, the less effective each weapon will become in proportion to its power.
+- If the wielder's Strength exceeds the total weight of equipped weapon(s), there is a roll for extra damage where the maximum is the difference, and the minimum is 0.
 - The chance of an attack to not miss, is given by the ratio of the attacker's [accuracy](glossary.md#accuracy) and the defender's [evasion](glossary.md#evasion). Both accuracy and evasion, unless modified, are equal to the corresponding combatants' Martial skills. If the attack is evaded, any accompanying effects are also evaded.
 
 #### Calculations:
@@ -35,11 +37,11 @@ Outgoing = Mod(BaseDmg)
 
 #### Things to note:
 
-- The attacker’s outgoing damage is the defender’s incoming damage. The damage taken is determined by the incoming damage, the defender’s equipped armour piece(s) (including shield) and Def modifiers.
-- The further the total Weight of equipped apparel exceeds the wearer's Strength, the slower the wearer becomes. This affects both turnrate and speed of the wearer.
-- The defence potential of each piece of armour is its Rating. Each piece of physical armour contributes a fixed percentage to the wearer's Def attributes, for instance a cuirass has more effect on Def even if a pair of gauntlets have the same Rating, because torso armour protects 50% of the body, and hand armour protects only 5%.
-- The percentage contribution of a shield to the Def attribute is ten times the wielder's evasion. However, not only does equipping a shield prohibit using both hands for weapon, but the shield Weight counts towards total apparel Weight.
-- The Def attribute always reduces damage taken, but never completely eliminates it. The higher the incoming damage, the more damage will be subtracted, but the percentage of the damage reduced will become smaller. The amount of damage subtracted can never exceed the value of Def.
+- The attacker’s outgoing damage is the defender’s incoming damage. The damage taken is determined by the incoming damage, the defender’s equipped armour piece(s) (including shield) and defence modifiers.
+- The further the total weight of equipped apparel exceeds the wearer's Strength, the slower the wearer becomes. This affects both turnrate and speed of the wearer.
+- The defence potential of each piece of armour is its rating. Each piece of physical armour contributes a fixed percentage to the wearer's defence stat, for instance a cuirass has more effect on defence even if a pair of gauntlets have the same rating, because torso armour protects 50% of the body, and hand armour protects only 5%.
+- The percentage contribution of a shield to the defence stat is ten times the wielder's evasion. However, not only does equipping a shield prohibit using both hands for weapon, but the shield weight counts towards total apparel weight.
+- The defence stat always reduces damage taken, but never completely eliminates it. The higher the incoming damage, the more damage will be subtracted, but the percentage of the damage reduced will become smaller. The amount of damage subtracted can never exceed the value of defence.
 
 #### Calculations:
 
@@ -50,10 +52,10 @@ EffDamage = Inc*Inc/(Inc+Mod(BaseDef))
 [Where Inc = Incoming damage]
 ```
 
-![Graph: Damage taken wrt incoming damage, at constant Def values.](media/wrtinc-def-10-50-200.png)
+![Graph: Damage taken wrt incoming damage, at constant defence values.](media/wrtinc-def-10-50-200.png)
 
-The above graph shows how received damage may change with respect to incoming damage at different fixed values of the Def attribute. More damage is blocked as the incoming damage increases, but the percentage of the incoming damage being blocked becomes smaller. \
-For example, with Def=20, an incoming damage of 5 may be reduced to 1 (subtraction=4, percentage reduction=80%), and a damage of 30 may be reduced to 18 (subtraction=12, percentage reduction=40%). So as the incoming damage increases (5 to 30), the amount of the subtracted damage increases (4 to 12), but its value in relation to the total incoming damage, decreases (80% to 40%). [[also see Appendix-1]](appendices.md#appendix-1-a-rant-about-ac)
+The above graph shows how received damage may change with respect to incoming damage at different fixed values of the defence stat. More damage is blocked as the incoming damage increases, but the percentage of the incoming damage being blocked becomes smaller. \
+For example, with defence=20, an incoming damage of 5 may be reduced to 1 (subtraction=4, percentage reduction=80%), and a damage of 30 may be reduced to 18 (subtraction=12, percentage reduction=40%). So as the incoming damage increases (5 to 30), the amount of the subtracted damage increases (4 to 12), but its value in relation to the total incoming damage, decreases (80% to 40%). [[also see Appendix-1]](appendices.md#appendix-1-a-rant-about-ac)
 
 ## Movement
 
