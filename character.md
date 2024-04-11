@@ -1,6 +1,6 @@
 # Character
 
-WIP: This file is incomplete.
+> **WIP:** This file is incomplete.
 
 ## Playable Races
 

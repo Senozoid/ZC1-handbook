@@ -10,4 +10,21 @@ It does NOT require an internet connection, or even a graphics card. You can ins
 
 This is my love-letter to old-school RPGs and high fantasy literature. It is, and will always be, completely **FREE** to play. My reward will be knowing that you played and enjoyed it, so don't forget to reach out and tell me how you felt, and to suggest any improvements.
 
-[DOWNLOAD NOW!](introduction/getting-started.md#downloading)
+## Quick Links
+
+- [Download](introduction/start.md#downloading)
+- [Setup](introduction/start.md#installation)
+- [FAQs](introduction/faqs.md)
+- [More](introduction/more.md)
+
+## Report Problems
+
+### For the Handbook
+
+If you find any mistakes or broken links in the handbook, please let me know [here](https://github.com/Senozoid/ZC1-handbook/discussions/new?category=questions-suggestions-and-help) (GitHub login required). Feel free to also tell me about any problems, questions or suggestions you may have regarding the handbook.
+
+To get started, make a post asking your question, describing a problem you have encountered, or a change you want me to do. You can attach screenshots to make it easier. Don't be shy, no suggestion is too silly to be considered and no problem is too silly to be solved.
+
+### For the Game
+
+## How You Can Support Me

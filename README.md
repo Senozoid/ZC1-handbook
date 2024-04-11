@@ -1,12 +1,4 @@
-# Quick Links
-
-- [Download](introduction/getting-started.md#downloading)
-- [FAQs](introduction/faqs.md)
-- [Report Problems](introduction/more.md#report-problems)
-- [Contact Me](introduction/more.md#contact-me)
-- [Support Me](introduction/more.md#support-me)
-
-# Table of Contents
+# Overview
 
 - [Introduction](introduction.md)
 - [Character](character.md)
