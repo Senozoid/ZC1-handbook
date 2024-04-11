@@ -4,7 +4,7 @@
 
 ### Accuracy
 
-This is a combat stat that increases the likelihood of the combatant's physical attacks successfully connecting. Unless modified, accuracy is equal to the combatant's Martial skill.
+This is a combat stat that increases the likelihood of the combatant's physical attacks successfully connecting. Base accuracy is dynamically calculated during combat, and depends on a combination of the combatant's Martial and Sensory skills. Accuracy cannot be less than 1 or more than 10.
 
 ### Athletic skill
 
@@ -18,19 +18,19 @@ This is a combat stat that increases the likelihood of the combatant's physical 
 
 ### Combat stats
 
-Combat stats are those stats which affect only combat, and not story gameplay. These consist of accuracy, evasion, balance, reach, turnrate, speed, Dmg and Def.
+Combat stats are those stats which affect only combat, and not story gameplay. These consist of accuracy, evasion, balance, reach, turnrate, speed, damage and defence.
 
 ## D
 
-### Def
+### Defence
 
-### Dmg
+### Damage
 
 ## E
 
 ### Evasion
 
-This is a combat stat that increases the likelihood of the physical attacks directed at the combatant being evaded. Evasion also determines the effectiveness of shields equipped by the combatant. Unless modified, evasion is equal to the combatant's Martial skill.
+This is a combat stat that increases the likelihood of the physical attacks directed at the combatant being evaded. Evasion also determines the effectiveness of shields equipped by the combatant. Base evasion is dynamically calculated during combat, and depends on a combination of the combatant's Martial and Athletic skills. Evasion cannot be less than 1 or more than 10.
 
 ## M
 
@@ -68,6 +68,6 @@ This is a combat stat that determines how far the combatant can move in a single
 
 ### Turnrate
 
-This is a combat stat that determines both the order and frequency of the combatant's turns. Higher values of turnrate are more advantageous. Unless modified, turnrate is equal to the combatant's Athletic skill, and it cannot be more than 10.
+This is a combat stat that determines both the order and frequency of the combatant's turns. Higher values of turnrate are more advantageous. Unless modified, turnrate is equal to the combatant's Athletic skill. Turnrate cannot be less than 1 or more than 10.
 
 ## U
