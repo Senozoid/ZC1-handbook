@@ -1,10 +1,8 @@
 # Combat
 
-> **NOTE:** Some mechanics have been changed, this page will be updated soon.
-
 ## Overview
 
-- Combat is turn-based and symmetric. During their turns, participants have the option to attack with their weapons, change weapons, move, or use a spell. Both order and frequency of a participant's turns in each round is determined by the participant's [turnrate](glossary.md#turnrate), which, unless modified, is equal to Athletic skill. However, if the battle starts with an ambush, then the surprised team misses the first round.
+- Combat is turn-based and symmetric. During their turns, participants have the option to attack with their weapons, change weapons, move, or use a spell. Both order and frequency of a participant's turns in each round is determined by the participant's [turnrate](glossary.md#turnrate), which largely depends on Athletic skill. However, if the battle starts with an ambush, then the surprised team misses the first round.
 - Combat continues as long as the player is alive and there is at least one active hostile within 100 distance from the player. In other words, if the player's health falls to 0, if the last enemy is neutralised, or if the player's distance from the nearest enemy exceeds 100 (some combats may not allow this), combat ends.
 - As long as there is at least one active hostile within 100 distance from the player, any other participant has to be at a distance more than 150 from the player (some combats may not allow this) to be considered out of combat. A combatant once considered to be out of combat does not have any part in the combat for the rest of its duration.
 - Having low enough Spirit during combat has a chance to trigger panic in a participant during each of the participant's turns. If panic is triggered in a turn, the combatant is forced to move randomly (instead of acting as desired) in that turn.
@@ -12,24 +10,26 @@
 
 ## Physical Damage
 
-- Outgoing damage is based on only the equipped weapon(s) which can attack an enemy at the chosen range. If the player chooses to attack an enemy outside the range of all of the player's equipped weapons, the turn will simply fail.
+- The only weapons contributing positively to outgoing damage are the equipped weapon(s) which can attack an enemy at the chosen range. However, all equipped weapons contribute to the total weapon weight.
 - Physical damage has 3 components, which are blunt damage, cutting damage and piercing damage. All calculations are done separately and symmetrically regarding these components. Both the [defence](glossary.md#defence) and [damage](glossary.md#damage) stats, as well as [weapon power](glossary.md#power) and [armour rating](glossary.md#rating), consider the three components to be independent of each other.
 
 ### Dealing Damage
 
 #### Things to note:
 
-- Outgoing physical damage is determined by the attacker’s equipped weapon(s), Strength attribute, damage modifiers, Martial skill and the defender’s Martial skill.
-- The damage potential of a weapon is its power, and the further the total weight of equipped weapon(s) exceeds the Strength of the wielder, the less effective each weapon will become in proportion to its power.
+- Outgoing physical damage is determined by the attacker's Strength attribute, equipped weapon(s), and damage modifiers.
+- The further the total weight of equipped weapon(s) exceeds the wielder's Strength, the further the wielder's turrnrate and accuracy are reduced.
 - If the wielder's Strength exceeds the total weight of equipped weapon(s), there is a roll for extra damage where the maximum is the difference, and the minimum is 0.
-- The chance of an attack to not miss, is given by the ratio of the attacker's [accuracy](glossary.md#accuracy) and the defender's [evasion](glossary.md#evasion). Both accuracy and evasion, unless modified, are equal to the corresponding combatants' Martial skills. If the attack is evaded, any accompanying effects are also evaded.
+- The probability of the attack completely missing, is determined by the attacker's [accuracy](glossary.md#accuracy) and the target's [evasion](glossary.md#evasion). If the attack is evaded, any accompanying effects are also evaded.
 
 #### Calculations:
 
 ```
-Hit probability = min(1, Accuracy/OppEvasion)
-WeaponDam = min(Power, Power*Strength/TotalWeight)
-BaseDmg = Sum of valid WeaponDams + roll(0,Strength-TotalWeight)
+Miss probability = max(0, (1+OppEva-Acc)/10)
+Powers = Sum of powers of weapons valid at chosen range
+Weights = Sum of weights of all equipped weapons
+
+BaseDmg = Powers + roll(0, Str-Weights)
 Outgoing = Mod(BaseDmg)
 ```
 
@@ -37,19 +37,26 @@ Outgoing = Mod(BaseDmg)
 
 #### Things to note:
 
-- The attacker’s outgoing damage is the defender’s incoming damage. The damage taken is determined by the incoming damage, the defender’s equipped armour piece(s) (including shield) and defence modifiers.
-- The further the total weight of equipped apparel exceeds the wearer's Strength, the slower the wearer becomes. This affects both turnrate and speed of the wearer.
-- The defence potential of each piece of armour is its rating. Each piece of physical armour contributes a fixed percentage to the wearer's defence stat, for instance a cuirass has more effect on defence even if a pair of gauntlets have the same rating, because torso armour protects 50% of the body, and hand armour protects only 5%.
-- The percentage contribution of a shield to the defence stat is ten times the wielder's evasion. However, not only does equipping a shield prohibit using both hands for weapon, but the shield weight counts towards total apparel weight.
-- The defence stat always reduces damage taken, but never completely eliminates it. The higher the incoming damage, the more damage will be subtracted, but the percentage of the damage reduced will become smaller. The amount of damage subtracted can never exceed the value of defence.
+- The attacker’s outgoing damage, if not evaded, is the target’s incoming damage. The damage taken is determined by the incoming damage, the target’s equipped armour piece(s), defence modifiers, and if a shield is equipped, Martial skill and the shield's rating.
+- The further the total weight of equipped apparel exceeds the wearer's Strength, the further the wearer's speed and evasion are reduced.
+- The defence potential of each piece of armour is its rating. Each piece of physical armour contributes a fixed percentage to the wearer's defence stat, so a pair of gauntlets has less effect on defence than a cuirass with the same rating, because torso armour protects 50% of the body, and hand armour protects only 5%.
+- The percentage contribution of a shield to the defence stat is ten times the wielder's Martial skill. However, not only does equipping a shield prohibit using both hands for weapon, but the shield weight counts towards total apparel weight.
+- The defence stat always reduces damage taken, but never completely eliminates it. The higher the incoming damage, the more damage will be subtracted, but the percentage of the damage reduced will become smaller. The subtracted damage never exceeds the target's defence stat.
 
 #### Calculations:
 
 ```
-BaseDef = head*20%+torso*50%+arms*10%+legs*10%+hands*5%+feet*5%+shield*(10*Martial)%
-= (head*4+torso*10+arms*2+legs*2+hands+feet+shield*2*evasion)/20
-EffDamage = Inc*Inc/(Inc+Mod(BaseDef))
-[Where Inc = Incoming damage]
+Portions of individual ratings adding to base defence:
+    Head: 20%
+    Torso: 50%
+    Arms: 10%
+    Legs: 10%
+    Hands: 5%
+    Feet: 5%
+    Shield: (10*Martial)%
+
+BaseDef = (head*4+torso*10+arms*2+legs*2+hands+feet+shield*2*Martial)/20
+EffDmg = Incoming^2/(Incoming+Mod(BaseDef))
 ```
 
 ![Graph: Damage taken wrt incoming damage, at constant defence values.](media/wrtinc-def-10-50-200.png)
@@ -59,7 +66,7 @@ For example, with defence=20, an incoming damage of 5 may be reduced to 1 (subtr
 
 ## Movement
 
-- Moving is one-dimensional, and unless teleportation is involved, the maximum distance moved per turn is given by the participant's [speed](glossary.md#speed), which, unless modified, is equal to Athletic skill.
+- Moving is one-dimensional, and unless teleportation is involved, the maximum distance moved per turn is given by the participant's [speed](glossary.md#speed), which largely depends on Athletic skill.
 - Participants with any form of teleportation can move once before using each of their regular turns, and the range of their movement is limited only by their teleportation. In essence, during each of their unskipped turns, they can move once and then take another action (and yes, the second action may also be movement). Unlike other participants, when panic is triggered, a teleporter moves randomly twice instead of once.
 
 ## Spellcasting
@@ -69,7 +76,7 @@ For example, with defence=20, an incoming damage of 5 may be reduced to 1 (subtr
 
 ## Combat Modifiers (WIP)
 
-Combat modifiers modify [combat stats](glossary.md#combat-stats), and are applied on top of skill modifiers. The order of applying combat modifiers is as below:
+Combat modifiers modify [combat stats](glossary.md#combat-stats). The order of applying combat modifiers is as below:
 
 Racial -> Class -> Effect -> Enchantment -> Opposition -> Chaos \
 [Within each type, additive modifiers are applied on top of multiplicative ones]
