@@ -1,7 +1,3 @@
----
-layout: default
----
-
 > **NOTE:** This entire thing is a work in progress.
 
 # Overview
