@@ -10,7 +10,7 @@
 
 ## Physical Damage
 
-- The only weapons contributing positively to outgoing damage are the equipped weapon(s) which can attack an enemy at the chosen range. However, all equipped weapons contribute to the total weapon weight.
+- The only weapons contributing positively to outgoing damage are the equipped weapon(s) which can affect the chosen target (not out of range and not immune to the weapon). However, all equipped weapons contribute to the total weapon effort.
 - Physical damage has 3 components, which are blunt damage, cutting damage and piercing damage. All calculations are done separately and symmetrically regarding these components. Both the [defence](glossary.md#defence) and [damage](glossary.md#damage) stats, as well as [weapon power](glossary.md#power) and [armour rating](glossary.md#rating), consider the three components to be independent of each other.
 
 ### Dealing Damage
@@ -18,18 +18,19 @@
 #### Things to note:
 
 - Outgoing physical damage is determined by the attacker's Strength attribute, equipped weapon(s), and damage modifiers.
-- The further the total weight of equipped weapon(s) exceeds the wielder's Strength, the further the wielder's turrnrate and accuracy are reduced.
-- If the wielder's Strength exceeds the total weight of equipped weapon(s), there is a roll for extra damage where the maximum is the difference, and the minimum is 0.
+- Each weapon requires an effort to be effective. For a ranged weapon, it is the draw-weight. For a melee or a thrown weapon, it is thrice the weight of the weapon.
+- The further the total effort of equipped weapon(s) exceeds the wielder's Strength, the further the wielder's turrnrate and accuracy are reduced.
+- If the wielder's Strength exceeds the total effort of equipped weapon(s), there is a roll for extra damage where the maximum is the difference, and the minimum is 0.
 - The probability of the attack completely missing, is determined by the attacker's [accuracy](glossary.md#accuracy) and the target's [evasion](glossary.md#evasion). If the attack is evaded, any accompanying effects are also evaded.
 
 #### Calculations:
 
 ```
 Miss probability = max(0, (1+OppEva-Acc)/10)
-Powers = Sum of powers of weapons valid at chosen range
-Weights = Sum of weights of all equipped weapons
+Powers = Sum of powers of weapons valid for chosen target
+Efforts = Sum of efforts of all equipped weapons
 
-BaseDmg = Powers + roll(0, Str-Weights)
+BaseDmg = Powers + roll(0, Strength-Efforts)
 Outgoing = Mod(BaseDmg)
 ```
 
