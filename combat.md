@@ -10,27 +10,28 @@
 
 ## Physical Damage
 
-- The only weapons contributing positively to outgoing damage are the equipped weapon(s) which can affect the chosen target (not out of range and not immune to the weapon). However, all equipped weapons contribute to the total weapon effort.
-- Physical damage has 3 components, which are blunt damage, cutting damage and piercing damage. All calculations are done separately and symmetrically regarding these components. Both the [defence](glossary.md#defence) and [damage](glossary.md#damage) stats, as well as [weapon power](glossary.md#power) and [armour rating](glossary.md#rating), consider the three components to be independent of each other.
+Physical damage has 3 components, which are blunt damage, cutting damage and piercing damage. All calculations are done separately and symmetrically regarding these components. Both the [defence](glossary.md#defence) and [damage](glossary.md#damage) stats, as well as [weapon power](glossary.md#power) and [armour rating](glossary.md#rating), consider the three components to be independent of each other. In some contexts, the sum of the three components of a physical damage is referred to as the total of that physical damage.
 
 ### Dealing Damage
 
 #### Things to note:
 
 - Outgoing physical damage is determined by the attacker's Strength attribute, equipped weapon(s), and damage modifiers.
-- Each weapon requires an effort to be effective. For a ranged weapon, it is the draw-weight. For a melee or a thrown weapon, it is thrice the weight of the weapon.
-- The further the total effort of equipped weapon(s) exceeds the wielder's Strength, the further the wielder's turrnrate and accuracy are reduced.
-- If the wielder's Strength exceeds the total effort of equipped weapon(s), there is a roll for extra damage where the maximum is the difference, and the minimum is 0.
+- The only weapons contributing positively to outgoing damage are the equipped weapon(s) which can affect the chosen target (not out of range and not immune to the weapon). However, all equipped weapons contribute to the Strength requirements.
+- Each weapon has a Strength requirement, ie., requires an effort to be effective. For a ranged weapon, it is the draw-weight. For a melee or a thrown weapon, it is thrice the weight of the weapon.
+- The further the total effort required for equipped weapon(s) exceeds the wielder's Strength, the further the wielder's turrnrate and accuracy are reduced.
+- If the wielder's Strength exceeds the effort required for an equipped melee weapon, there is a roll for extra damage. The total of this extra damage cannot exceed the extra Strength or the total of the weapon power. And all the components of this extra damage are equal (total/3). [[also see Appendix-3]](appendices.md#appendix-3-the-melee-weapon-puzzle)
 - The probability of the attack completely missing, is determined by the attacker's [accuracy](glossary.md#accuracy) and the target's [evasion](glossary.md#evasion). If the attack is evaded, any accompanying effects are also evaded.
 
 #### Calculations:
 
 ```
 Miss probability = max(0, (1+OppEva-Acc)/10)
-Powers = Sum of powers of weapons valid for chosen target
-Efforts = Sum of efforts of all equipped weapons
 
-BaseDmg = Powers + roll(0, Strength-Efforts)
+Melee weapon damage = WeaponPower + ExtraDamage
+Other weapon damage = WeaponPower
+
+BaseDmg = Sum of damages from weapons valid for chosen target
 Outgoing = Mod(BaseDmg)
 ```
 

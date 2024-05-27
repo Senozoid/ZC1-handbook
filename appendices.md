@@ -23,3 +23,7 @@ The idea is that each round lasts for 5 seconds. The turnrate of a combatant is 
 ```
 
 What this list of numbers means is that each round is divided into 55 uneven slots. The game iterates through the list, and at each slot, all the combatants with turnrate equal to the given number gets their turns. If two combatants have the same turnrate and belong to the same team then whoever appears earlier in that team's list goes first, but if they have the same turnrate and belong to opposing teams then the one who is not in the player's party goes first. If a timespan has to last for n rounds, that means it lasts for 55n slots, or in other words, it ends before the same slot, n rounds later. Here, timespan refers to anything from the duration of an effect to the preparation time for a spell.
+
+## Appendix-3: The Melee Weapon Puzzle
+
+A pair of short swords, or a single longsword... is one better than the other? Or is there a fair and balanced trade-off?
