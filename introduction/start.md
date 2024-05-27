@@ -30,7 +30,7 @@ Just unzip the downloaded file into the location of your choice and you are all 
 
 The UNIX version is just the game directory compressed into a tgz (tar.gz) file, very similar to the portable zip for Windows. To install, extract it into the location of your choice and change permissions so that you can execute the files in the game directory. After that, you can play the game just by running the "Launcher" file in the directory.
 
-If you are not sure how to do all that, just replace the "filename" and "installation-path" in the following commands, and run them on the terminal. If there are any problems with these commands, please [let me know](../introduction#report-problems).
+If you are not sure how to do all that, just replace the "filename" and "installation-path" in the following commands, and run them on the terminal. If there are any problems with these commands, please [let me know](../introduction.html#report-problems).
 
 Setup:
 
