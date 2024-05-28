@@ -9,6 +9,5 @@
 - [Gameplay](gameplay.md)
 - [Story](story.md)
 - [World](world.md)
-- [Technical Details](technical-details.md)
 - [Appendices](appendices.md)
 - [Glossary](glossary.md)
