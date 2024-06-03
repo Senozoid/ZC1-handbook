@@ -48,7 +48,7 @@ This is the property of a weapon which determines its effectiveness. It has thre
 
 ### Rating
 
-This is the property of an armour piece which determines its effectiveness. It has three components for the three types of physical damage, and the higher each of these values are, the higher damage of that type the armour piece can potentially resist. Usually, armour pieces made of similar materials have similar rating, even if the respective percentage contributions are different. For example, a steel helmet and a steel cuirass should have the same rating, even though one offers more protection than the other.
+This is the property of an armour piece which determines its effectiveness. It has three components for the three types of physical damage, and the higher each of these values are, the higher damage of that type the armour piece can potentially resist. Usually, armour pieces made of similar materials have similar rating, even if the respective percentage contributions are different. For example, a steel helmet and a steel cuirass should have the same rating, even though one offers more protection than the other. Shields are a notable exception to this general rule.
 
 ### Reach
 
