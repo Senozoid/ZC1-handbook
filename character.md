@@ -32,11 +32,41 @@ Half-giants are towering hulks of inhuman strength, but despite their obvious ph
 
 ## Playable Classes
 
-## Primary Attributes
+## Attributes
+
+//describe attributes
+
+### Attribute Modifiers
+
+Staring base value of each attribute = 14+d6 \
+The notation "XdY" refers to the total value obtained by rolling X dice with Y sides. If the number of dice is not mentioned, it is 1. All values given here are rolled once during character creation, and remains constant for the playthrough.
+
+| Race/Attribute | Health | Strength | Arcana |
+| -------------- | ------ | -------- | ------ |
+| Human          | 0      | 0        | 0      |
+| Dwarf          | +d4    | +d4      | 0      |
+| Elf            | -d4    | -d4      | +d4    |
+| Half-giant     | +d12   | +d12     | -d4    |
+
+//add table: class/attribute mods
 
 ## Skills
 
-## Secondary Attributes
+//describe skills
+
+### Skill Modifiers
+
+Starting base value of each skill = 3 \
+The player is also granted 3 extra skill points to allocate as they wish.
+
+| Race/Skill | Athletic | Martial | Mental | Sensory | Social | Stealth |
+| ---------- | -------- | ------- | ------ | ------- | ------ | ------- |
+| Human      | 0        | +1      | 0      | -1      | +1     | 0       |
+| Dwarf      | -1       | +1      | 0      | 0       | 0      | -1      |
+| Elf        | +1       | -1      | 0      | +1      | 0      | +1      |
+| Half-giant | +2       | 0       | -1     | -1      | -1     | -2      |
+
+//add table: class/skill mods
 
 ## Quirks
 
