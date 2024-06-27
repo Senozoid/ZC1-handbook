@@ -1,8 +1,16 @@
 # Getting Started
 
+**WIP: The links will be available after release.**
+
+The easiest way to start playing is to [download the game on Windows](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-setup.exe), run the downloaded installer, and launch the game from the desktop shortcut that appears.
+
+If you are not comfortable with running an installer, you can also [download the zipped version for Windows](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-win.zip), extract it, and run the given launcher.
+
+If you are not on Windows, you may be able to [download the tgz version](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-uni.tgz), extract it and run `./Launcher` in the game folder. However, if you have a Windows machine, **I recommend playing on Windows**. I have tested the tgz version only on one Linux system, and although it could, I cannot guarantee that it will work on macOS. Any advice or help with testing will be very appreciated, so feel free to email me about this. I have plans to use either [packr](https://github.com/libgdx/packr) or [jpackage](https://docs.oracle.com/en/java/javase/17/docs/specs/man/jpackage.html) to build installers for Linux and macOS in the future, and any advice about that will be appreciated as well.
+
 ## Downloading
 
-**WIP:** Links not here yet, will be soon. You should be able to download the Windows version from:
+**After the game is released**, you should be able to download the Windows version from:
 
 - [GitHub](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-setup.exe)
 - [Itch\.io]()
@@ -26,7 +34,9 @@ Just unzip the downloaded file into the location of your choice and you are all 
 
 ### Installing on macOS or Linux (`.tgz`)
 
-> **NOTE:** The game needs you to have bash, which is probably already in your system by default. But you can confirm this by running `cat /etc/shells` on the terminal and seeing if "/bin/bash" is listed.
+> **NOTE 1:** If you have a Windows machine, I recommend playing there instead. See the top of this page for more details.
+
+> **NOTE 2:** The game needs you to have bash, which is probably already in your system by default. But you can confirm this by running `cat /etc/shells` on the terminal and seeing if "/bin/bash" is listed.
 
 The UNIX version is just the game directory compressed into a tgz (tar.gz) file, very similar to the portable zip for Windows. To install, extract it into the location of your choice and change permissions so that you can execute the files in the game directory. After that, you can play the game just by running the "Launcher" file in the directory.
 
