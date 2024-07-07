@@ -39,7 +39,7 @@ Half-giants are towering hulks of inhuman strength, but despite their obvious ph
 ### Attribute Modifiers
 
 Staring base value of each attribute = 14+d6 \
-The notation "XdY" refers to the total value obtained by rolling X dice with Y sides. If the number of dice is not mentioned, it is 1. All values given here are rolled once during character creation, and remains constant for the playthrough.
+(The notation "XdY" refers to the total value obtained by rolling X dice with Y sides. If the number of dice is not mentioned, it is 1.)
 
 | Race/Attribute | Health | Strength | Arcana |
 | -------------- | ------ | -------- | ------ |
