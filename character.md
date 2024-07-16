@@ -74,9 +74,9 @@ The player is also granted 3 extra skill points to allocate as they wish.
 | Race/Skill | Athletic | Martial | Mental | Sensory | Social | Stealth |
 | ---------- | -------- | ------- | ------ | ------- | ------ | ------- |
 | Human      | 0        | +1      | 0      | -1      | +1     | 0       |
-| Dwarf      | -1       | +1      | 0      | 0       | 0      | 0       |
-| Elf        | +1       | -1      | 0      | +1      | 0      | +1      |
-| Half-giant | +2       | 0       | -1     | -1      | -1     | -1      |
+| Dwarf      | -1       | +1      | 0      | 0       | 0      | +1      |
+| Elf        | +1       | 0       | 0      | +1      | 0      | 0       |
+| Half-giant | +2       | 0       | -1     | 0       | -1     | -1      |
 
 | Class/Skill | Athletic | Martial | Mental | Sensory | Social | Stealth |
 | ----------- | -------- | ------- | ------ | ------- | ------ | ------- |
