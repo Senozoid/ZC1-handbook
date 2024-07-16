@@ -32,6 +32,18 @@ Half-giants are towering hulks of inhuman strength, but despite their obvious ph
 
 ## Playable Classes
 
+### Soldier
+
+### Warrior
+
+### Sorcerer
+
+### Wizard
+
+### Spy
+
+### Thief
+
 ## Attributes
 
 //describe attributes
@@ -39,7 +51,7 @@ Half-giants are towering hulks of inhuman strength, but despite their obvious ph
 ### Attribute Modifiers
 
 Staring base value of each attribute = 14+d6 \
-(The notation "XdY" refers to the total value obtained by rolling X dice with Y sides. If the number of dice is not mentioned, it is 1.)
+(The notation "XdY" refers to the total value obtained by rolling X dice with Y sides. If X is not mentioned, it is 1.)
 
 | Race/Attribute | Health | Strength | Arcana |
 | -------------- | ------ | -------- | ------ |
@@ -62,11 +74,18 @@ The player is also granted 3 extra skill points to allocate as they wish.
 | Race/Skill | Athletic | Martial | Mental | Sensory | Social | Stealth |
 | ---------- | -------- | ------- | ------ | ------- | ------ | ------- |
 | Human      | 0        | +1      | 0      | -1      | +1     | 0       |
-| Dwarf      | -1       | +1      | 0      | 0       | 0      | -1      |
+| Dwarf      | -1       | +1      | 0      | 0       | 0      | 0       |
 | Elf        | +1       | -1      | 0      | +1      | 0      | +1      |
-| Half-giant | +2       | 0       | -1     | -1      | -1     | -2      |
+| Half-giant | +2       | 0       | -1     | -1      | -1     | -1      |
 
-//add table: class/skill mods
+| Class/Skill | Athletic | Martial | Mental | Sensory | Social | Stealth |
+| ----------- | -------- | ------- | ------ | ------- | ------ | ------- |
+| Soldier     | 0        | +2      | 0      | 0       | 0      | -1      |
+| Warrior     | +2       | 0       | 0      | 0       | 0      | -1      |
+| Sorcerer    | -1       | -1      | +1     | 0       | +1     | 0       |
+| Wizard      | 0        | -1      | +2     | 0       | -1     | 0       |
+| Spy         | 0        | -1      | 0      | +1      | +2     | 0       |
+| Thief       | +1       | -1      | 0      | +1      | -1     | +2      |
 
 ## Quirks
 
