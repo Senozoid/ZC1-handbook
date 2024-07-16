@@ -2,7 +2,7 @@
 
 ## Overview
 
-- Combat is turn-based and symmetric. During their turns, participants have the option to attack with their weapons, change weapons, move, or use a spell. Both order and frequency of a participant's turns in each round is determined by the participant's [turnrate](glossary.md#turnrate), which largely depends on Athletic skill. However, if the battle starts with an ambush, then the surprised team misses the first round.
+- Combat is turn-based and symmetric. During their turns, participants have the option to attack with their weapons, change weapons, move, or use a spell. Both order and frequency of a participant's turns in each round is determined by the participant's [turnrate](glossary.md#turnrate), which largely depends on Martial skill. However, if the battle starts with an ambush, then the surprised team misses the first round.
 - Combat continues as long as the player is alive and there is at least one active hostile within 100 distance from the player. In other words, if the player's health falls to 0, if the last enemy is neutralised, or if the player's distance from the nearest enemy exceeds 100 (some combats may not allow this), combat ends.
 - As long as there is at least one active hostile within 100 distance from the player, any other participant has to be at a distance more than 150 from the player (some combats may not allow this) to be considered out of combat. A combatant once considered to be out of combat does not have any part in the combat for the rest of its duration.
 - Having low enough Spirit during combat has a chance to trigger panic in a participant during each of the participant's turns. If panic is triggered in a turn, the combatant is forced to move randomly (instead of acting as desired) in that turn.
@@ -82,4 +82,3 @@ Combat modifiers modify [combat stats](glossary.md#combat-stats). The order of a
 
 Racial -> Class -> Effect -> Enchantment -> Opposition -> Chaos \
 [Within each type, additive modifiers are applied on top of multiplicative ones]
-

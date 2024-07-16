@@ -70,6 +70,6 @@ This is a combat stat that determines how far the combatant can move in a single
 
 ### Turnrate
 
-This is a combat stat that determines both the order and frequency of the combatant's turns. Higher values of turnrate are more advantageous. Base turnrate depends on the combatant's Athletic skill, total weight of equipped weapon(s) and Strength attribute. Turnrate cannot be less than 1 or more than 10.
+This is a combat stat that determines both the order and frequency of the combatant's turns. Higher values of turnrate are more advantageous. Base turnrate depends on the combatant's Martial skill, total weight of equipped weapon(s) and Strength attribute. Turnrate cannot be less than 1 or more than 10.
 
 ## U
