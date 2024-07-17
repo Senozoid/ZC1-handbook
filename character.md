@@ -60,7 +60,7 @@ Staring base value of each attribute = 14+d6 \
 | Elf            | -d4    | -d4      | +d4    |
 | Half-giant     | +d12   | +d12     | -d4    |
 
-//add table: class/attribute mods
+Player class does not affect starting values of the attributes, but they change how the attributes increase when the player levels up. See class descriptions for more details.
 
 ## Skills
 
@@ -81,7 +81,7 @@ The player is also granted 3 extra skill points to allocate as they wish.
 | Class/Skill | Athletic | Martial | Mental | Sensory | Social | Stealth |
 | ----------- | -------- | ------- | ------ | ------- | ------ | ------- |
 | Soldier     | 0        | +2      | 0      | 0       | 0      | -1      |
-| Warrior     | +2       | 0       | 0      | 0       | 0      | -1      |
+| Warrior     | +1       | +1      | 0      | 0       | 0      | -1      |
 | Sorcerer    | -1       | -1      | +1     | 0       | +1     | 0       |
 | Wizard      | 0        | -1      | +2     | 0       | -1     | 0       |
 | Spy         | 0        | -1      | 0      | +1      | +2     | 0       |
