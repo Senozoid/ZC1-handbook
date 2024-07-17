@@ -60,7 +60,7 @@ Staring base value of each attribute = 14+d6 \
 | Elf            | -d4    | -d4      | +d4    |
 | Half-giant     | +d12   | +d12     | -d4    |
 
-Player class does not affect starting values of the attributes, but they change how the attributes increase when the player levels up. See class descriptions for more details.
+Player class does not affect starting values of the attributes, but they may change how the attributes increase when the player levels up. See class descriptions for more details.
 
 ## Skills
 
@@ -82,10 +82,10 @@ The player is also granted 3 extra skill points to allocate as they wish.
 | ----------- | -------- | ------- | ------ | ------- | ------ | ------- |
 | Soldier     | 0        | +2      | 0      | 0       | 0      | -1      |
 | Warrior     | +1       | +1      | 0      | 0       | 0      | -1      |
-| Sorcerer    | -1       | -1      | +1     | 0       | +1     | 0       |
-| Wizard      | 0        | -1      | +2     | 0       | -1     | 0       |
-| Spy         | 0        | -1      | 0      | +1      | +2     | 0       |
-| Thief       | +1       | -1      | 0      | +1      | -1     | +2      |
+| Sorcerer    | 0        | -1      | +1     | 0       | 0      | 0       |
+| Wizard      | -1       | 0       | +2     | 0       | -1     | 0       |
+| Spy         | 0        | -1      | 0      | +2      | +2     | 0       |
+| Thief       | +2       | -1      | 0      | +1      | -1     | +2      |
 
 ## Quirks
 
