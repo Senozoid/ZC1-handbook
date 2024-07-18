@@ -75,6 +75,7 @@ For example, with defence=20, an incoming damage of 5 may be reduced to 1 (subtr
 
 - To cast a spell, a participant needs to start preparing it. Once the preparation has started, it may be cancelled during the caster's turn, thereby ending the turn. The preparation may take zero or more rounds (not turns), which depends on the spell and is not affected by the caster's skills.
 - The arcana required to cast a spell is spent when the preparation begins, and is recovered if the casting is intentionally cancelled, but not if it fails or is interrupted. The effect of a spell begins only after the preparation is complete. A caster may prepare only one spell at a time, and as long as a spell is being prepared, the caster cannot do anything else without cancelling it.
+- In case of continuously cast spells, the caster must wait for their turn to intentionally stop the casting. However, the casting may stop at any time due to other reasons, such as the caster running out of Arcana.
 
 ## Combat Modifiers (WIP)
 
