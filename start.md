@@ -1,10 +1,10 @@
 # Getting Started
 
-**WIP: The links will be available after release.**
+**WIP: The links are dead now, will be available after release.**
 
 The easiest way to start playing is to [download the zip file for Windows](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-win.zip), extract it, and run the given launcher.
 
-If you are not on Windows, you may be able to [download the tgz version](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-uni.tgz), extract it and run `./Launcher` in the game folder. However, if you have a Windows machine, **I recommend playing on Windows**. I have tested the tgz version only on one Linux system, and although it could, I cannot guarantee that it will work on macOS. I have no idea how macOS works. Any advice or help with testing will be very appreciated, so feel free to email me about this. I have plans to use either [packr](https://github.com/libgdx/packr) or [jpackage](https://docs.oracle.com/en/java/javase/17/docs/specs/man/jpackage.html) to build installers for Linux and macOS in the future, and any advice about that will be appreciated as well.
+If you are not on Windows, you may be able to [download this tgz file](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-uni.tgz), extract it and run `./Launcher` in the game folder. However, if you have a Windows machine, **I recommend playing on Windows**. I have tested the tgz "installation" only on one Linux system, and although it could, I cannot guarantee that it will work on macOS. I have no idea how macOS works. Any advice or help with testing will be very appreciated, so feel free to email me about this. I have plans to use either [packr](https://github.com/libgdx/packr) or [jpackage](https://docs.oracle.com/en/java/javase/17/docs/specs/man/jpackage.html) to build installers for Linux and macOS in the future, and any advice about that will be appreciated as well.
 
 ## Downloading
 
