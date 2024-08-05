@@ -2,11 +2,9 @@
 
 **WIP: The links will be available after release.**
 
-The easiest way to start playing is to [download the game on Windows](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-setup.exe), run the downloaded installer, and launch the game from the desktop shortcut that appears.
+The easiest way to start playing is to [download the zip file for Windows](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-win.zip), extract it, and run the given launcher.
 
-If you are not comfortable with running an installer, you can also [download the zipped version for Windows](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-win.zip), extract it, and run the given launcher.
-
-If you are not on Windows, you may be able to [download the tgz version](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-uni.tgz), extract it and run `./Launcher` in the game folder. However, if you have a Windows machine, **I recommend playing on Windows**. I have tested the tgz version only on one Linux system, and although it could, I cannot guarantee that it will work on macOS. Any advice or help with testing will be very appreciated, so feel free to email me about this. I have plans to use either [packr](https://github.com/libgdx/packr) or [jpackage](https://docs.oracle.com/en/java/javase/17/docs/specs/man/jpackage.html) to build installers for Linux and macOS in the future, and any advice about that will be appreciated as well.
+If you are not on Windows, you may be able to [download the tgz version](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-uni.tgz), extract it and run `./Launcher` in the game folder. However, if you have a Windows machine, **I recommend playing on Windows**. I have tested the tgz version only on one Linux system, and although it could, I cannot guarantee that it will work on macOS. I have no idea how macOS works. Any advice or help with testing will be very appreciated, so feel free to email me about this. I have plans to use either [packr](https://github.com/libgdx/packr) or [jpackage](https://docs.oracle.com/en/java/javase/17/docs/specs/man/jpackage.html) to build installers for Linux and macOS in the future, and any advice about that will be appreciated as well.
 
 ## Downloading
 
@@ -21,6 +19,8 @@ If you are not on Windows, you may be able to [download the tgz version](https:/
 > **NOTE:** If you get the game through the Itch desktop app, it takes care of your installation automatically. Otherwise, follow the instructions here.
 
 ### Executable Installer for Windows (`.exe`)
+
+> **NOTE:** I have decided to remove this and make the zip file the only Windows option. The reasons for this decision are (1) Windows may show warnings about running an unknown installer, dissuading potential players from playing the game, and (2) this will make it easier for me, as the zip file is also what Itch recommends to be uploaded.
 
 If you want to make the setup process as simple as possible, the executable installer is the better option. It installs the game on your computer, automatically creates shortcuts to launch it, and gives you the option to uninstall it later from "Apps & features" in Windows Settings (or "Programs and Features" in Control Panel).
 
