@@ -1,6 +1,6 @@
 # Getting Started
 
-**WIP: The links are dead now, will be active after release.**
+**WIP: The game has not released yet, the links will be active after release.**
 
 ## Get from Itch
 
@@ -18,11 +18,11 @@ _Coming soon..._
 
 #### Setup on Windows
 
-Double-click on the downloaded file to extract it to your location of choice.
+Double-click on the downloaded file to extract the contents to your location of choice.
 
 #### Launch on Windows
 
-Go to the game directory (where you extracted the files). In the game directory, find the `.exe` file, and run it. You can also make a desktop shortcut to make things easier.
+Go to the game directory (where you extracted the files). There, double-click on the `Shadow-of-Doom.exe` file to launch it. You can also make a desktop shortcut to make things easier.
 
 ### Play on Linux
 
@@ -47,9 +47,9 @@ cd <installation-path>
 ```
 
 You can also make a desktop launcher to make things easier.
- 
-## Get from Gamejolt
- 
+
+## Get from Game Jolt
+
 _Coming soon..._ 
 
 ## What the version numbers mean
@@ -65,7 +65,7 @@ _Coming soon..._
 
 ### Test release
 
-+ Suffixed with `.X` [Examples: `v2.X`, `v1.2.X`, `v1.2.3.X` etc.]
++ Suffixed with `.x` or `.X` [Examples: `v2.x`, `v1.2.X`, `v1.2.3.x` etc.]
 + Expected to be followed by a stable release
 + Expected to have bugs, published mostly for testing purposes
 
