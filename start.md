@@ -10,6 +10,8 @@ _Coming soon..._
 
 ## Get from GitHub
 
+### Play on Windows
+
 #### Download on Windows
 
 [Download this self-extracting archive](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-windows-x64.exe).
@@ -33,7 +35,7 @@ Go to the game directory (where you extracted the files). In the game directory,
 #### Setup on Linux
 
 ```bash
-tar -xzvf filename.tgz -C <installation-path>
+tar -xzvf zc1-linux-x64.tgz -C <installation-path>
 chmod +x <installation-path>/zc1
 ```
 
@@ -49,6 +51,29 @@ You can also make a desktop launcher to make things easier.
 ## Get from Gamejolt
  
 _Coming soon..._ 
+
+## What the version numbers mean
+
+### Stable release
+
++ Marked by 3 numbers, i.e., update (major; `>=1`), patch (minor), and story version [Examples: `v2.0.0`, `v1.2.3` etc.]
++ Finished versions released to the publishing platforms, and meant to be played by most players
++ If two stable releases differ only by the story version, the saves from each are compatible with the other
++ If two stable releases differ by patch, their saves are not guaranteed to be compatible
++ If two stable releases differ by update, their saves are expected to be incompatible
++ Hopefully, there will not be any (major) updates after the first stable release, but (minor) patches are to be expected
+
+### Test release
+
++ Suffixed with `.X` [Examples: `v2.X`, `v1.2.X`, `v1.2.3.X` etc.]
++ Expected to be followed by a stable release
++ Expected to have bugs, published mostly for testing purposes
+
+### Pre-release
+
++ The first number is `0` [Examples: `v0.2`, `v0.1.2` etc.]
++ Earliest releases of the game
++ Guaranteed to be incomplete, published solely for informational purposes
 
 ## Initial Setup
 
