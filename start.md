@@ -10,7 +10,7 @@ _Coming soon..._
 
 ## Get from GitHub
 
-### Play on Windows
+### For Windows
 
 #### Download on Windows
 
@@ -24,7 +24,7 @@ Double-click on the downloaded file to extract the contents to your location of 
 
 Go to the game directory (where you extracted the files). There, double-click on the `Shadow-of-Doom.exe` file to launch it. You can also make a desktop shortcut to make things easier.
 
-### Play on Linux
+### For Linux
 
 > **NOTE:** If you have a Windows machine, _I recommend playing on Windows_. The Linux version is not thoroughly tested. Any help or advice regarding this is appreciated.
 
