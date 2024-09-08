@@ -22,9 +22,9 @@ Combat stats are those stats which affect only combat, and not story gameplay. T
 
 ## D
 
-### Defence
-
 ### Damage
+
+### Defence
 
 ## E
 

@@ -32,17 +32,39 @@ Half-giants are towering hulks of inhuman strength, but despite their obvious ph
 
 ## Playable Classes
 
+The classes listed here are only the ones the player can start with. More playable classes may be discovered later in the game. Besides the advantages listed here, some classes may also give the player access to unique equipment or abilities.
+
 ### Soldier
+
+**Bonus:** Gains +5 Health per player level.
+
+#### Abilities
 
 ### Warrior
 
+**Bonus:** Gains +10 Strength per player level.
+
+#### Abilities
+
 ### Sorcerer
+
+**Bonus:** Gains +10 Arcana per player level.
+
+#### Abilities
 
 ### Wizard
 
+**Bonus:** Gains +5 Arcana for every spell learnt.
+
+#### Abilities
+
 ### Spy
 
+#### Abilities
+
 ### Thief
+
+#### Abilities
 
 ## Attributes
 
@@ -53,14 +75,14 @@ Half-giants are towering hulks of inhuman strength, but despite their obvious ph
 Staring base value of each attribute = 14+d6 \
 (The notation "XdY" refers to the total value obtained by rolling X dice with Y sides. If X is not mentioned, it is 1.)
 
-| Race/Attribute | Health | Strength | Arcana |
-| -------------- | ------ | -------- | ------ |
-| Human          | 0      | 0        | 0      |
-| Dwarf          | +d4    | +d4      | 0      |
-| Elf            | -d4    | -d4      | +d4    |
-| Half-giant     | +d12   | +d12     | -d4    |
+| Race/Attribute | Health | Arcana | Strength |
+| -------------- | ------ | ------ | -------- |
+| Human          | 0      | 0      | 0        |
+| Dwarf          | +d4    | 0      | +d4      |
+| Elf            | -d4    | +d4    | -d4      |
+| Half-giant     | +d12   | -d4    | +d12     |
 
-Player class does not affect starting values of the attributes, but they may change how the attributes increase when the player levels up. See class descriptions for more details.
+Player class does not affect starting values of the attributes, but it may change how the attributes increase when the player levels up. See class descriptions for more details.
 
 ## Skills
 
@@ -87,6 +109,15 @@ The player is also granted 3 extra skill points to allocate as they wish.
 | Spy         | 0        | -1      | 0      | +2      | +2     | 0       |
 | Thief       | +2       | -1      | 0      | +1      | -1     | +2      |
 
+## Combat Stats
+
+Combat stats, as the name suggests, are stats which affect only combat, and nothing else. While attributes and skills are a character's primary stats, combat stats are secondary stats, and are derived dynamically (whenever needed) from other values, including the combatant's skills, equipments and modifiers. The combat stats are [accuracy](glossary.md#accuracy), [evasion](glossary.md#evasion), balance, reach, [turnrate](glossary.md#turnrate), [speed](glossary.md#speed), [damage](glossary.md#damage) and [defence](glossary.md#defence).
+
 ## Quirks
 
 ## Modifiers
+
+The order of applying modifiers is as below:
+
+Race Bonuses -> Class Bonuses -> Magical Effects -> Enchantments \
+[Within each type, additive modifiers are applied on top of multiplicative ones]
