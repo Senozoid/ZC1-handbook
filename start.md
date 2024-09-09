@@ -1,15 +1,15 @@
 # Getting Started
 
-**The game is under development; Itch and Game Jolt links will be available after the first test release.**
-
-> **NOTE:** If you get the game through the Itch desktop app, it sets up everything automatically, and you can launch the game through the app. Otherwise, follow the links and instructions here.
+> **NOTE:** If you get the game through the Itch desktop app, it takes care of everything; you can download, install and launch the game, right from the app. Otherwise, follow the links and instructions here.
 
 ## Download
 
+**The game is under development; Itch and Game Jolt links will be available after the first test release.**
+
 | OS            | Itch | GitHub                                                                                       | Game Jolt |
 | ------------- |:----:|:--------------------------------------------------------------------------------------------:|:---------:|
-| Windows (x64) | --   | [zip](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-windows-x64.zip) | --        |
-| Linux (x64)   | --   | [tgz](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-linux-x64.tgz)   | --        |
+| Windows (x64) | --   | [v0.0.0](https://github.com/Senozoid/ZC1-handbook/releases/download/v0.0.0/zc1-windows-x64.zip) | --        |
+| Linux (x64)   | --   | [v0.0.0](https://github.com/Senozoid/ZC1-handbook/releases/download/v0.0.0/zc1-linux-x64.tgz)   | --        |
 
 ## Play on Windows
 
