@@ -28,6 +28,7 @@ If you have a Windows machine, _I recommend playing on Windows_. The Linux versi
 1. To setup, download the tgz file and open the terminal in the directory where it is downloaded. Then, run the following commands (replace `<game-dir>`):
    
    ```bash
+   mkdir -p <game-dir>
    tar -xzvf zc1-linux-x64.tgz -C <game-dir>
    chmod +x <game-dir>/zc1
    ```
