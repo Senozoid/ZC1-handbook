@@ -1,45 +1,45 @@
 # Getting Started
 
-**WIP: The game has not released yet, the download links will be active after release.**
+**The game is under development; Itch and Game Jolt links will be available after the first test release.**
 
-## Get from Itch
+> **NOTE:** If you get the game through the Itch desktop app, it sets up everything automatically, and you can launch the game through the app. Otherwise, follow the links and instructions here.
 
-_Coming soon..._
+## Download
 
-> **NOTE:** If you get the game through the Itch desktop app, it sets up everything automatically. Otherwise, follow the instructions here.
+| OS            | Itch | GitHub                                                                                       | Game Jolt |
+| ------------- |:----:|:--------------------------------------------------------------------------------------------:|:---------:|
+| Windows (x64) | --   | [zip](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-windows-x64.zip) | --        |
+| Linux (x64)   | --   | [tgz](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-linux-x64.tgz)   | --        |
 
-## Get from GitHub
+## Play on Windows
 
-### For Windows
+1. To setup, download the zip file from one of the given links and extract its contents to any location of your choice.
 
-+ **Download:** [zip](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-windows-x64.zip)
+2. To launch the game, go to the game directory (where you extracted the files). There, double-click on the `Shadow-of-Doom.exe` file to run it.
 
-+ **Setup:** Extract the contents of the downloaded zip file to your location of choice.
+3. Optionally, you can make a desktop shortcut to be able to launch the game more easily.
 
-+ **Launch:** Go to the game directory (where you extracted the files). There, double-click on the `Shadow-of-Doom.exe` file to launch it. You can also make a desktop shortcut to make things easier.
+## Play on Linux
 
-### For Linux
+If you have a Windows machine, _I recommend playing on Windows_. The Linux version is not thoroughly tested. Any help or advice regarding this is appreciated.
 
-> **NOTE:** If you have a Windows machine, _I recommend playing on Windows_. The Linux version is not thoroughly tested. Any help or advice regarding this is appreciated.
+> **NOTE:** In the following scripts, replace all occurrences of `<game-dir>` with the actual path where you would keep the game files.
 
-+ **Download:** [tgz](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-linux-x64.tgz)
+1. To setup, download the tgz file and open the terminal in the directory where it is downloaded. Then, run the following commands (replace `<game-dir>`):
+   
+   ```bash
+   tar -xzvf zc1-linux-x64.tgz -C <game-dir>
+   chmod +x <game-dir>/zc1
+   ```
 
-+ **Setup:** Run the following script (replace `<game-dir>`)
-  ```bash
-  tar -xzvf zc1-linux-x64.tgz -C <game-dir>
-  chmod +x <game-dir>/zc1
-  ```
+2. To launch the game, run the following commands on the terminal (replace `<game-dir>`):
+   
+   ```bash
+   cd <game-dir>
+   ./zc1
+   ```
 
-+ **Launch:** Run the following script (replace `<game-dir>`)
-  ```bash
-  cd <game-dir>
-  ./zc1
-  ```
-  You can also make a desktop entry to make things easier. See `README-for-linux.md` in the game directory.
-
-## Get from Game Jolt
-
-_Coming soon..._ 
+3. You can also create a desktop entry to make it easier for yourself to launch the game. To know how, see `README-for-linux.md` in the game directory.
 
 ## What the version numbers mean
 
@@ -64,7 +64,7 @@ _Coming soon..._
 + Earliest releases of the game
 + Guaranteed to be incomplete, published solely for informational purposes
 
-## Initial Setup
+## Initial Configuration
 
 ## Character Creation
 

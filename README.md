@@ -2,12 +2,12 @@
 
 # Overview
 
-- [How to Play](start.md)
-- [Introduction](introduction.md)
-- [Character](character.md)
-- [Combat](combat.md)
-- [Gameplay](gameplay.md)
-- [Story](story.md)
-- [World](world.md)
-- [Appendices](appendices.md)
-- [Glossary](glossary.md)
++ [How to Play](start.md)
++ [Introduction](introduction.md)
++ [Character](character.md)
++ [Combat](combat.md)
++ [Gameplay](gameplay.md)
++ [Story](story.md)
++ [World](world.md)
++ [Appendices](appendices.md)
++ [Glossary](glossary.md)

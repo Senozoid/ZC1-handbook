@@ -12,10 +12,10 @@ This is my love-letter to old-school RPGs and high fantasy literature. It is, an
 
 ## Quick Links
 
-- [Download](start.md#downloading)
-- [Setup](start.md#installation)
-- [FAQs](faqs.md)
-- [More](more.md)
++ [Download](start.md#downloading)
++ [Setup](start.md#installation)
++ [FAQs](faqs.md)
++ [More](more.md)
 
 ## Report Problems
 
