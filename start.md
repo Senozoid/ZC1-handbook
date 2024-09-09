@@ -1,52 +1,41 @@
 # Getting Started
 
-**WIP: The game has not released yet, the links will be active after release.**
+**WIP: The game has not released yet, the download links will be active after release.**
 
 ## Get from Itch
 
-> **NOTE:** If you get the game through the Itch desktop app, it sets up everything automatically. Otherwise, follow the instructions here.
-
 _Coming soon..._
+
+> **NOTE:** If you get the game through the Itch desktop app, it sets up everything automatically. Otherwise, follow the instructions here.
 
 ## Get from GitHub
 
 ### For Windows
 
-#### Download on Windows
++ **Download:** [zip](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-windows-x64.zip)
 
-[Download this self-extracting archive](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-windows-x64.exe).
++ **Setup:** Extract the contents of the downloaded zip file to your location of choice.
 
-#### Setup on Windows
-
-Double-click on the downloaded file to extract the contents to your location of choice.
-
-#### Launch on Windows
-
-Go to the game directory (where you extracted the files). There, double-click on the `Shadow-of-Doom.exe` file to launch it. You can also make a desktop shortcut to make things easier.
++ **Launch:** Go to the game directory (where you extracted the files). There, double-click on the `Shadow-of-Doom.exe` file to launch it. You can also make a desktop shortcut to make things easier.
 
 ### For Linux
 
 > **NOTE:** If you have a Windows machine, _I recommend playing on Windows_. The Linux version is not thoroughly tested. Any help or advice regarding this is appreciated.
 
-#### Download on Linux
++ **Download:** [tgz](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-linux-x64.tgz)
 
-[Download this tgz file](https://github.com/Senozoid/ZC1-handbook/releases/latest/download/zc1-linux-x64.tgz).
++ **Setup:** Run the following script (replace `<game-dir>`)
+  ```bash
+  tar -xzvf zc1-linux-x64.tgz -C <game-dir>
+  chmod +x <game-dir>/zc1
+  ```
 
-#### Setup on Linux
-
-```bash
-tar -xzvf zc1-linux-x64.tgz -C <installation-path>
-chmod +x <installation-path>/zc1
-```
-
-#### Launch on Linux
-
-```bash
-cd <installation-path>
-./zc1
-```
-
-You can also make a desktop launcher to make things easier.
++ **Launch:** Run the following script (replace `<game-dir>`)
+  ```bash
+  cd <game-dir>
+  ./zc1
+  ```
+  You can also make a desktop entry to make things easier. See `README-for-linux.md` in the game directory.
 
 ## Get from Game Jolt
 
