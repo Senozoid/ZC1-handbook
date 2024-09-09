@@ -41,7 +41,7 @@ If you have a Windows machine, _I recommend playing on Windows_. The Linux versi
 
 3. You can also create a desktop entry to make it easier for yourself to launch the game. To know how, see `README-for-linux.md` in the game directory.
 
-## What the version numbers mean
+## Version Numbering
 
 ### Stable release
 
