@@ -1,10 +1,12 @@
 # Getting Started
 
-> **NOTE:** If you get the game through the Itch desktop app, it takes care of everything; you can download, install and launch the game, right from the app. Otherwise, follow the links and instructions here.
+If you get the game through the Itch desktop app, it takes care of everything; you can download, install and launch the game, right from the app. Otherwise, follow the links and instructions here.
 
 ## Download
 
-**The game is under development; Itch and Game Jolt links will be available after the first test release.**
+> **NOTE:** The game is under development; Itch and Game Jolt links will be available after the first test release. See [version numbering](#version-numbering) for more details.
+
+---
 
 | OS            | Itch | GitHub                                                                                       | Game Jolt |
 | ------------- |:----:|:--------------------------------------------------------------------------------------------:|:---------:|
@@ -24,6 +26,8 @@
 If you have a Windows machine, _I recommend playing on Windows_. The Linux version is not thoroughly tested. Any help or advice regarding this is appreciated.
 
 > **NOTE:** In the following scripts, replace all occurrences of `<game-dir>` with the actual path where you would keep the game files.
+
+---
 
 1. To setup, download the tgz file and open the terminal in the directory where it is downloaded. Then, run the following commands (replace `<game-dir>`):
    

@@ -1,5 +1,7 @@
 > **NOTE:** This entire thing is a work in progress.
 
+---
+
 # Overview
 
 + [How to Play](start.md) <-- (download links here)
