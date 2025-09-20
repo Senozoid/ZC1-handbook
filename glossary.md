@@ -6,9 +6,13 @@
 
 This is a combat stat that increases the likelihood of the combatant's physical attacks successfully connecting. Base accuracy is dynamically calculated during combat, and depends on distance from the target, and a combination of the combatant's Martial and Sensory skills. Accuracy cannot be less than 1 or more than 10.
 
+### Arcana
+
+A person's arcana is their capacity to command magic. Without it, no spells can be casted, no wonders can be woven. Arcana spent in casting spells can be recovered with a good rest, or by drinking appopriate potions.
+
 ### Athletic skill
 
-### Attributes
+### Attribute
 
 ## B
 
@@ -16,7 +20,7 @@ This is a combat stat that increases the likelihood of the combatant's physical 
 
 ## C
 
-### Combat stats
+### Combat stat
 
 Combat stats are those stats which affect only combat, and not story gameplay. These consist of accuracy, evasion, balance, reach, turnrate, speed, damage and defence.
 
@@ -52,9 +56,13 @@ This is the property of an armour piece which determines its effectiveness. It h
 
 ### Reach
 
+### Rune
+
+Runes are powerful artifacts used to bind spells to a mage's arcana. Learning a spell without the use of runes requires true sorcery.
+
 ## S
 
-### Skills
+### Skill
 
 ### Speed
 
@@ -62,7 +70,7 @@ This is a combat stat that determines how far the combatant can move in a single
 
 ### Spirit
 
-### Stats
+### Stat
 
 ### Strength
 

@@ -8,8 +8,8 @@ If you get the game through the Itch desktop app, it takes care of everything; y
 
 ---
 
-| OS            | Itch | GitHub                                                                                       | Game Jolt |
-| ------------- |:----:|:--------------------------------------------------------------------------------------------:|:---------:|
+| OS            | Itch | GitHub                                                                                          | Game Jolt |
+| ------------- |:----:|:-----------------------------------------------------------------------------------------------:|:---------:|
 | Windows (x64) | --   | [v0.1.0](https://github.com/Senozoid/ZC1-handbook/releases/download/v0.1.0/zc1-windows-x64.zip) | --        |
 | Linux (x64)   | --   | [v0.1.0](https://github.com/Senozoid/ZC1-handbook/releases/download/v0.1.0/zc1-linux-x64.tgz)   | --        |
 
