@@ -50,12 +50,11 @@ If you have a Windows machine, _I recommend playing on Windows_. The Linux versi
 
 ### Stable release
 
-+ Marked by 3 numbers, i.e., update (major; `>=1`), patch (minor), and story version [Examples: `v2.0.0`, `v1.2.3` etc.]
-+ Finished versions released to the publishing platforms, and meant to be played by most players
-+ If two stable releases differ only by the story version, the saves from each are compatible with the other
-+ If two stable releases differ by patch, their saves are not guaranteed to be compatible
-+ If two stable releases differ by update, their saves are expected to be incompatible
-+ Hopefully, there will not be any (major) updates after the first stable release, but (minor) patches are to be expected
++ Marked by 3 numbers, i.e., major (`>=1`), minor, and content update numbers respectively [Examples: `v2.0.0`, `v1.2.3` etc.]
++ If two stable releases differ only by content update, the saves from each are compatible with the other, unless mentioned otherwise
++ If two stable releases differ by minor update, their saves are not guaranteed to be compatible
++ If two stable releases differ by major update, their saves are expected to be incompatible
++ Hopefully, there will not be any major updates after the first stable release, but minor ones are to be expected
 
 ### Test release
 

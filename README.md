@@ -4,7 +4,7 @@ Hello there! This website or repository is meant to serve as a handbook for a pi
 
 This handbook, as well as the game itself, are both works in progress. If you want to play the game in its current state, or read more about it, use the links in the list below (some links may not work yet). Any suggestions or questions are most welcome, please feel free to [reach out](introduction.md#reaching-out)!
 
-# Overview
+---
 
 + [How to Play](start.md) <-- (download links here)
 + [Introduction](introduction.md)
