@@ -48,13 +48,11 @@ If you have a Windows machine, _I recommend playing on Windows_. The Linux versi
 
 ## Version Numbering
 
-### Stable release
+### Pre-release
 
-+ Marked by 3 numbers, i.e., major (`>=1`), minor, and content update numbers respectively [Examples: `v2.0.0`, `v1.2.3` etc.]
-+ If two stable releases differ only by content update, the saves from each are compatible with the other, unless mentioned otherwise
-+ If two stable releases differ by minor update, their saves are not guaranteed to be compatible
-+ If two stable releases differ by major update, their saves are expected to be incompatible
-+ Hopefully, there will not be any major updates after the first stable release, but minor ones are to be expected
++ The first number is `0` [Examples: `v0.2`, `v0.1.2` etc.]
++ Earliest releases of the game, during initial development
++ Guaranteed to be incomplete, published solely for informational purposes
 
 ### Test release
 
@@ -62,11 +60,11 @@ If you have a Windows machine, _I recommend playing on Windows_. The Linux versi
 + Expected to be followed by a stable release
 + Expected to have bugs, published mostly for testing purposes
 
-### Pre-release
+### Stable release
 
-+ The first number is `0` [Examples: `v0.2`, `v0.1.2` etc.]
-+ Earliest releases of the game
-+ Guaranteed to be incomplete, published solely for informational purposes
++ Marked by 3 numbers, i.e., major (`>=1`), minor, and content update numbers respectively [Examples: `v2.0.0`, `v1.2.3` etc.]
++ If two stable releases differ only by content update, the saves from each are compatible with the other, unless mentioned otherwise
++ If two stable releases differ by major or minor update, their saves are expected to be incompatible
 
 ## Initial Configuration
 
