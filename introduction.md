@@ -6,7 +6,7 @@ _A strange disturbance stirs the land. Stories have been heard of otherworldly t
 
 Shadow of Doom is a **fantasy adventure** story where you, the reader, is a part of the world. You can choose your own actions, which in turn changes what happens in the story. It is primarily in the style of good old gamebooks, and also offers RPG elements like playable fantasy races, skills, levelling, inventory system, even optional combat!
 
-It does NOT require an internet connection, or a particularly fancy computer. You can install and play it on your 10-year-old laptop if you want to. And I plan to eventually, but not anytime soon, make a version for you to play it on your phone as well.
+It is completely offline, self-contained, and text-based. You can play it on Windows or Linux, or any system emulating one of those.
 
 This is my love-letter to old-school RPGs and high fantasy literature. It is, and will always be, completely **FREE** to play. My reward will be knowing that you played and enjoyed it, so don't forget to reach out and tell me how you felt, and to suggest any improvements.
 

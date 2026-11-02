@@ -13,5 +13,4 @@ This handbook, as well as the game itself, are both works in progress. If you wa
 + [Gameplay](gameplay.md)
 + [Story](story.md)
 + [World](world.md)
-+ [Appendices](appendices.md)
 + [Glossary](glossary.md)
