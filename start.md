@@ -4,10 +4,10 @@ The game is under development, only pre-releases are currently available. After 
 
 ## Download
 
-| OS            | GitHub                                                                                          |
-| ------------- |:-----------------------------------------------------------------------------------------------:|
-| Windows (x64) | [v0.1.0](https://github.com/Senozoid/ZC1-handbook/releases/download/v0.1.0/zc1-windows-x64.zip) |
-| Linux (x64)   | [v0.1.0](https://github.com/Senozoid/ZC1-handbook/releases/download/v0.1.0/zc1-linux-x64.tgz)   |
+| OS            | GitHub                                                                                          | Itch |
+| ------------- |:-----------------------------------------------------------------------------------------------:|:----:|
+| Windows (x64) | [v0.1.0](https://github.com/Senozoid/ZC1-handbook/releases/download/v0.1.0/zc1-windows-x64.zip) | --   |
+| Linux (x64)   | [v0.1.0](https://github.com/Senozoid/ZC1-handbook/releases/download/v0.1.0/zc1-linux-x64.tgz)   | --   |
 
 ## Play on Windows
 
@@ -42,24 +42,24 @@ If it helps, you can use the following scripts, replacing all occurrences of `<g
 
 ## Deletion
 
-The game deliberately avoids making any changes outside its own folder (don't launch it from anywhere else). To delete the game cleanly, just delete its entire folder (and the desktop shortcut, if you made one). You can keep a backup of the `saves` folder if you wish.
+The game deliberately keeps all files within its own folder (don't launch it from anywhere else). To delete the game cleanly, just delete its entire folder (and the desktop shortcut, if you made one). You can keep a backup of the `saves` folder if you wish.
 
 ## Version Numbering
 
-### Pre-release (Alpha)
+### Pre-release (alpha)
 
-+ The first number is `0` [Examples: `v0.2`, `v0.1.2` etc.]
++ The first number is `0` (Examples: `v0.2`, `v0.1.2` etc.)
 + Earliest releases of the game, during initial development
 + Guaranteed to be incomplete, published solely for informational purposes
 
-### Test release (Beta)
+### Test release (beta)
 
-+ The first number is `1` or more, and there is a `.x` or `.X` suffix [Examples: `v2.x`, `v1.2.X`, `v1.2.3.x` etc.]
++ The first number is `1` or more, and there is a `.x` or `.X` suffix (Examples: `v2.x`, `v1.2.X`, `v1.2.3.x` etc.)
 + Expected to have bugs, published mostly for testing purposes
 
 ### Stable release
 
-+ The first number is `1` or more, and there is no letter suffix [Examples: `v2.0.0`, `v1.2.3` etc.]
++ The first number is `1` or more, and there is no letter suffix (Examples: `v2.0.0`, `v1.2.3` etc.)
 + If two stable releases differ by the first or second number, their saves are expected to be incompatible
 
 ## Initial Configuration
